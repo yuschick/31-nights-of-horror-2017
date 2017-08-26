@@ -1,0 +1,284 @@
+*,
+::after,
+::before {
+  background-repeat: no-repeat;
+  box-sizing: inherit;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline; }
+
+::after,
+::before {
+  text-decoration: inherit;
+  vertical-align: inherit; }
+
+::-moz-selection {
+  background-color: #b3d4fc;
+  color: #000;
+  text-shadow: none; }
+
+::selection {
+  background-color: #b3d4fc;
+  color: #000;
+  text-shadow: none; }
+
+html {
+  box-sizing: border-box;
+  overflow-y: scroll;
+  -webkit-text-size-adjust: 100%; }
+
+body {
+  -webkit-backface-visibility: hidden;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+  background: #000;
+  color: #121212;
+  font: 16px/1.5 "Raleway", sans-serif;
+  height: 100%;
+  width: 100%; }
+
+img {
+  border: 0;
+  height: auto;
+  max-width: 100%; }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block; }
+
+ol,
+ul {
+  list-style: none; }
+
+[aria-busy="true"] {
+  cursor: progress; }
+
+[aria-controls] {
+  cursor: pointer; }
+
+[aria-disabled] {
+  cursor: default; }
+
+header {
+  background: rgba(0, 0, 0, 0.9);
+  left: 0;
+  padding: 10px 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100; }
+
+.header-container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between; }
+
+.logo {
+  height: 50px; }
+
+nav ul {
+  display: flex; }
+
+nav li {
+  font: 1.5rem/1 "Roboto Slab", serif;
+  padding: 10px 0; }
+  nav li:first-child {
+    border-right: 1px solid #680403;
+    margin-right: 10px;
+    padding-right: 10px; }
+
+nav a {
+  color: rgba(255, 255, 255, 0.25);
+  text-decoration: none;
+  transition: color 0.25s ease; }
+  nav a:hover {
+    color: rgba(255, 255, 255, 0.6); }
+
+.date-display-outer-container {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%; }
+
+.date-display-column-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.day-bar-container {
+  display: flex;
+  min-height: 60px; }
+
+.date-container {
+  align-items: center;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60px; }
+  .date-container span {
+    color: #fff;
+    display: block;
+    font-family: "Roboto Slab", serif;
+    line-height: 1em; }
+    .date-container span:last-child {
+      font-size: 1.5rem; }
+
+.theme-container {
+  background: #810504;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font: 1.25rem/1.15 "Roboto Slab", serif;
+  padding: 0 10px;
+  text-transform: uppercase;
+  width: 200px; }
+
+.arrow {
+  cursor: pointer;
+  height: 12px;
+  fill: #fff;
+  margin: 10px 0;
+  opacity: 0.5;
+  transition: opacity 0.25s ease;
+  width: 12px; }
+  .arrow:hover {
+    opacity: 0.9; }
+
+.is-flipped {
+  transform: rotate(180deg); }
+
+.primary-movie-container {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  width: 100%; }
+  .primary-movie-container:nth-of-type(odd) {
+    margin-top: -100px; }
+  .primary-movie-container:nth-of-type(even) {
+    margin-top: -75px; }
+
+.play-icon-container {
+  height: 103px;
+  width: 103px; }
+
+.play-icon {
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.25s ease; }
+  .play-icon:hover {
+    opacity: 0.9; }
+
+.movie-card-container {
+  max-width: 750px;
+  opacity: 0.95;
+  width: 100%; }
+
+h2 {
+  background: #000;
+  color: #fff;
+  display: block;
+  font: 1.75rem/1 "Roboto Slab", serif;
+  margin-bottom: 2px;
+  padding: 10px 10px;
+  text-transform: uppercase;
+  width: 100%; }
+
+.movie-details-container {
+  align-items: center;
+  background: #810504;
+  color: #fff;
+  display: flex;
+  margin-bottom: 10px;
+  padding: 5px 10px; }
+  .movie-details-container span {
+    margin-right: 20px; }
+  .movie-details-container svg {
+    height: 20px;
+    margin-right: 10px;
+    width: 20px; }
+    .movie-details-container svg path {
+      fill: rgba(255, 255, 255, 0.9); }
+
+.movie-card-content-container {
+  background: #fff;
+  display: flex;
+  min-height: 250px;
+  padding: 10px 10px; }
+
+.movie-cover-container {
+  margin-right: 10px; }
+  .movie-cover-container img {
+    display: block; }
+
+.synopsys-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: calc(100% - 150px); }
+
+.day-outer-container {
+  background-image: url("https://filmgrab.files.wordpress.com/2016/09/thewitch022.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  margin-top: -55px;
+  overflow: hidden;
+  position: relative;
+  width: 100%; }
+  .day-outer-container:nth-child(odd) {
+    clip-path: polygon(0 0, 100% 75px, 100% calc(100% - 75px), 0 100%);
+    padding-top: 100px; }
+  .day-outer-container:nth-child(even) {
+    clip-path: polygon(0 75px, 100% 0, 100% 100%, 0 calc(100% - 75px));
+    padding-top: 75px; }
+  .day-outer-container:first-child {
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 75px), 0 100%);
+    margin-top: 0; }
+  .day-outer-container:last-child {
+    clip-path: polygon(0 0, 100% 75px, 100% 100%, 0 100%); }
+
+.day-inner-container {
+  display: flex;
+  height: 100%; }
+
+.icons-container {
+  display: flex; }
+
+.stream-icon {
+  height: 34px;
+  filter: grayscale(100%);
+  margin-right: 10px;
+  transition: filter 0.15s ease;
+  width: 34px; }
+  .stream-icon:hover {
+    filter: none; }
+
+.root {
+  min-height: 100vh;
+  position: relative;
+  width: 100%; }
+
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+  position: relative;
+  width: 100%; }

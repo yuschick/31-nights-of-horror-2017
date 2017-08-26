@@ -1,27 +1,64 @@
-[![31 Nights of Horror 2017](https://github.com/yuschick/31-Nights-of-Horror-2017/raw/master/header.jpg)](http://yuschick.github.io/31-Nights-of-Horror-2017/)
+# Project Template
 
-It's no secret that I have an incredible love for horror movies. The **31 Nights of Horror** series began in 2015 as a way to work on a fun design and coding project while creating a resource for others who are unsure where to turn for good holiday horror.
+This repo is a project skeleton for a general project. It will evolve as project needs change and other improvements are added.
 
-### 2017 Summary
-Coming 29.9.17
+Currently, the setup includes:
+- NPM Scripts
+- PostCSS leveraging Autoprefixer
+- Babel w/ es-2015 presets
+- Autoprefixer
+- Browserslist set to past 3 versions
+- Webpack
+- Docco
+- Imagemin
+- Mocha
+- Minifier
+
+### Getting Started
+
+- Clone the repo
+- Using Terminal or CMD, navigate into the top level directory containing the repo files
+- `yarn` to install all devDependencies for the project
+- `yarn watch` to begin listening to any changes to SCSS or JS files in the source directory
+- When 'complete', run `yarn build` to optimize, test, and document the project
+
+### Script Documentation
+#### watch
+
+```
+yarn watch
+```
+
+should be run during development. It will:  
+- Spin up a local server and live reload on changes
+- Listen for changes in the `./src/styles/` and `./src/js/` directories
+- The SCSS files will compile down to `./dist/styles/app.css`
+- The scripts/modules will be combined and stored as `./dist/js/app.js`
+- Then transpiled with Babel to `es-2015` presets
+
+#### build
+```
+yarn build
+```
+
+should be run at checkpoints throughout a project. It will execute the following:
+ - During `prebuild` any tests will be run with Mocha. Errors will quit the build
+ - Run `./dist/styles/app.css` through PostCSS back three browser versions
+ - Minify styles and scripts into `app.min.css/js`
+ - Run image optimization on all images in `./src/images/` and output to `./dist/images/`
+ - Create documentation in the `./docs/` directory
 
 
-### All Calendars
-[View the 2015 Calendar](http://yuschick.github.io/31-Nights-of-Horror-2015/) - [Repo](https://github.com/yuschick/31-Nights-of-Horror-2015)  
-[View the 2016 Calendar](http://www.danyuschick.com/31-nights-of-horror/) - [Repo](https://github.com/yuschick/31-Nights-of-Horror-2016)  
-[View the 2017 Calendar](http://yuschick.github.io/31-Nights-of-Horror-2017/) - [Repo](https://github.com/yuschick/31-Nights-of-Horror-2017)  
+#### test
+```
+yarn test
+```
 
-### Rules
-- No movies can repeat across calendars
-- I must watch every movie before it can be added to the list
-- Aim for a balance of eras, sub-genres, and languages
-- Alliterative themes
+will only run the Mocha tests
 
-### Movies
-- TBD
 
-## Tech Notes
-- TBD
-
-## Contact:
-[@Yuschick](http://www.twitter.com/yuschick)
+### ToDo
+- [x] Include localStorage module in `util.js` by default
+- [x] Consider using Webpack to spin up the server versus Atom Live Server. Maybe have that be a separate script to provide the option?
+- [x] Update Docco to support wildcard selectors, `./src/js/**/*` to handle documentation for all modules  
+- [x] Copy image files from `./src/images/` into `./dist/images/`  
