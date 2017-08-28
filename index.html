@@ -28,28 +28,29 @@
           <nav>
             <ul>
               <li>
-                <a href='#' target='new'>2016</a>
+                <a href='#' target='_blank'>2016</a>
               </li>
               <li>
-                <a href='#' target='new'>2015</a>
+                <a href='#' target='_blank'>2015</a>
               </li>
             </ul>
           </nav>
         </div>
       </div>
     </header>
-    <main>
-    </main>
+    <main></main>
   </div>
+
+  <script id='trailer-template' type='text/x-handlebars-template'>
+    <iframe class='trailer' src="https://www.youtube.com/embed/{{trailer}}?rel=0&amp;controls=0&amp;autoplay=1&amp;showinfo=0?ecver=2" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe>
+    <div class='close-icon'>
+      CLOSE
+    </div>
+  </script>
 
   <script id='movie-template' type='text/x-handlebars-template'>
     <section class='day-outer-container' data-movie='{{label}}'>
-      <!-- <div class='trailer-container'>
-        <iframe class='trailer' src="https://www.youtube.com/embed/{{trailer}}?rel=0&amp;controls=0&amp;autoplay=1&amp;showinfo=0?ecver=2" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe>
-        <div class='close-icon' data-movie='{{label}}'>
-          CLOSE
-        </div>
-      </div> -->
+      <div class='trailer-container'></div>
       <section class='container day-inner-container'>
         <div class='date-display-outer-container'>
           <div class='date-display-column-container'>
@@ -75,7 +76,7 @@
         </div>
 
         <div class='container primary-movie-container'>
-          <div class='play-icon-container' data-movie='{{label}}'>
+          <div class='play-icon-container' data-movie='{{label}}' data-trailer='{{links.trailer}}'>
             <img class='play-icon' src='./src/images/icon-play.svg' alt='Play {{title}} Trailer' />
           </div>
           <section class='movie-card-container'>
@@ -100,23 +101,23 @@
                 </p>
                 <div class='icons-container'>
                   <div class='stream-icon'>
-                    <a href='http://www.imdb.com/title/{{links.imdb}}' target='new'><img src='./src/images/icon-imdb.jpg' alt='View {{title}} on IMDB' /></a>
+                    <a href='http://www.imdb.com/title/{{links.imdb}}' target='_blank'><img src='./src/images/icon-imdb.jpg' alt='View {{title}} on IMDB' /></a>
                   </div>
                   {{#if links.amazon}}
                   <div class='stream-icon'>
-                    <a href='{{links.amazon}}' target='new'><img src='./src/images/icon-amazon.jpg' alt='Watch {{title}} on Amazon' /></a>
+                    <a href='{{links.amazon}}' target='_blank'><img src='./src/images/icon-amazon.jpg' alt='Watch {{title}} on Amazon' /></a>
                   </div>
                   {{/if}} {{#if links.hulu}}
                   <div class='stream-icon'>
-                    <a href='{{links.hulu}}' target='new'><img src='./src/images/icon-hulu.jpg' alt='Watch {{title}} on Hulu' /></a>
+                    <a href='{{links.hulu}}' target='_blank'><img src='./src/images/icon-hulu.jpg' alt='Watch {{title}} on Hulu' /></a>
                   </div>
                   {{/if}} {{#if links.netflix}}
                   <div class='stream-icon'>
-                    <a href='{{links.netflix}}' target='new'><img src='./src/images/icon-netflix.jpg' alt='Watch {{title}} on Netflix' /></a>
+                    <a href='{{links.netflix}}' target='_blank'><img src='./src/images/icon-netflix.jpg' alt='Watch {{title}} on Netflix' /></a>
                   </div>
                   {{/if}} {{#if links.youtube}}
                   <div class='stream-icon'>
-                    <a href='https://www.youtube.com/watch?v={{links.youtube}}' target='new'><img src='./src/images/icon-youtube.jpg' alt='Watch {{title}} on Youtube' /></a>
+                    <a href='https://www.youtube.com/watch?v={{links.youtube}}' target='_blank'><img src='./src/images/icon-youtube.jpg' alt='Watch {{title}} on Youtube' /></a>
                   </div>
                   {{/if}}
                 </div>

@@ -1,9 +1,9 @@
 const Handlebars = require('handlebars');
 const util = require('./../util');
+const Trailer = require('./trailer');
 
 module.exports = {
-  dates: [
-    {
+  dates: [{
       theme: 'Slow Burn',
       day: 'Sunday'
     },
@@ -32,8 +32,7 @@ module.exports = {
       day: 'Saturday'
     }
   ],
-  movies: [
-    {
+  movies: [{
       title: 'The VVitch',
       details: {
         backdrop: 'https://filmgrab.files.wordpress.com/2016/09/thewitch022.jpg',
@@ -92,6 +91,8 @@ module.exports = {
     }
   ],
   allContainers: null,
+  id: 1,
+  index: 0,
 
   loadImage(path, ref) {
     const img = document.createElement('img');
@@ -104,34 +105,68 @@ module.exports = {
     }, false);
   },
 
-  init() {
-    const main = document.getElementsByTagName('main')[0];
+  buildMovieObject(movie) {
+    movie.id = this.id < 10 ? `0${this.id}` : this.id;
+    movie.label = util.formatString(movie.title);
+    movie.date = {};
+    movie.date.theme = this.dates[this.index].theme;
+    movie.date.day = this.dates[this.index].day;
+    movie.arrows.top = this.id === 1 ? false : true;
+    movie.arrows.bottom = this.id === 31 ? false : true;
+
+    return movie;
+  },
+
+  bindEvents() {
+    // Bind the date nav arrows
+
+    // Bind play icons
+    const playIcons = document.querySelectorAll('.play-icon-container');
+    playIcons.forEach(icon => {
+      icon.addEventListener('click', function() {
+        const movieId = this.attributes['data-movie'].value;
+        const trailerId = this.attributes['data-trailer'].value;
+        Trailer.init(movieId, trailerId);
+      });
+    });
+  },
+
+  buildTemplate(context) {
     const movieTemplate = document.getElementById('movie-template');
     const source = movieTemplate.innerHTML;
     const template = Handlebars.compile(source);
-    let id = 1;
-    let index = 0;
+    const html = template(context);
+
+    this.insertTemplate(html);
+  },
+
+  insertTemplate(html) {
+    const main = document.getElementsByTagName('main')[0];
+    main.innerHTML += html;
+  },
+
+  buildAllMovies() {
+    let html;
     let containerID;
 
     this.movies.map(movie => {
-      movie.id = id < 10 ? `0${id}` : id;
-      movie.label = util.formatString(movie.title);
-      movie.date = {};
-      movie.date.theme = this.dates[index].theme;
-      movie.date.day = this.dates[index].day;
-      movie.arrows.top = id === 1 ? false : true;
-      movie.arrows.bottom = id === 31 ? false : true;
-
-      let context = movie;
-      let html = template(context);
-      main.innerHTML += html;
+      let context = this.buildMovieObject(movie);
+      this.buildTemplate(context);
 
       this.allContainers = document.querySelectorAll('.day-outer-container');
-      containerID = id - 1;
+      containerID = this.id - 1;
 
       this.loadImage(movie.details.backdrop, containerID);
-      index = index++ === 7 ? 0 : index++;
-      id++;
+
+      this.index = this.index++ === 7 ? 0 : this.index++;
+      this.id++;
     });
+  },
+
+  init() {
+    // Make reuqest to movies JSON
+    // Make reuqest to day/themes JSON
+    
+    this.buildAllMovies();
   }
 };

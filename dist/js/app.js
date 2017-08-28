@@ -53,47 +53,73 @@
 	  "use strict";
 
 	  calendar.init();
-	  trailer.init();
+	  calendar.bindEvents();
 	})();
 
 /***/ }),
 /* 1 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
+
+	var Handlebars = __webpack_require__(3);
 
 	module.exports = {
-	  // bindEvents() {
-	  //   const playicons = document.querySelectorAll('.play-icon-container');
-	  //   const closeicons = document.querySelectorAll('.close-icon');
-	  //
-	  //   playicons.forEach(icon => {
-	  //     icon.addEventListener('click', () => {
-	  //       const movie = icon.attributes['data-movie'].value;
-	  //       this.toggleTrailer(movie);
-	  //     });
-	  //   });
-	  //
-	  //   closeicons.forEach(icon => {
-	  //     icon.addEventListener('click', () => {
-	  //       const movie = icon.attributes['data-movie'].value;
-	  //       this.toggleTrailer(movie);
-	  //     });
-	  //   });
-	  // },
-	  //
-	  // toggleTrailer(movie) {
-	  //   const container = document.querySelector(`.day-outer-container[data-movie=${movie}]`);
-	  //   const inner = container.getElementsByClassName('day-inner-container')[0];
-	  //   const trailer = container.getElementsByClassName('trailer-container')[0];
-	  //
-	  //   inner.classList.toggle('trailer');
-	  //   trailer.classList.toggle('active');
-	  // },
-	  //
-	  // init() {
-	  //   this.bindEvents();
-	  // }
+	  movie: null,
+	  trailer: null,
+
+	  removeTrailers: function removeTrailers() {
+	    var trailers = document.querySelectorAll('.trailer-container.active');
+	    trailers.forEach(function (trailer) {
+	      trailer.innerHTML = '';
+	    });
+	  },
+	  buildTemplate: function buildTemplate(movieId, trailerId) {
+	    var trailerTemplate = document.getElementById('trailer-template');
+	    var source = trailerTemplate.innerHTML;
+	    var template = Handlebars.compile(source);
+	    var context = {
+	      trailer: this.trailer
+	    };
+	    var html = template(context);
+
+	    this.insertTemplate(html);
+	  },
+	  insertTemplate: function insertTemplate(html) {
+	    var container = document.querySelector('.day-outer-container[data-movie=' + this.movie + ']');
+	    var trailer = container.querySelector('.trailer-container');
+
+	    this.toggleContainerClasses(container);
+
+	    trailer.classList.add('active');
+	    trailer.innerHTML = html;
+
+	    this.bindCloseIcon();
+	  },
+	  toggleContainerClasses: function toggleContainerClasses() {
+	    var container = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null;
+
+	    var currentActive = document.querySelector('.day-outer-container.trailer');
+	    if (currentActive) currentActive.classList.remove('trailer');
+	    if (container) container.classList.add('trailer');
+	  },
+	  bindCloseIcon: function bindCloseIcon() {
+	    var _this = this;
+
+	    var close = document.querySelector('.close-icon');
+	    close.addEventListener('click', function () {
+	      _this.removeTrailers();
+	      _this.toggleContainerClasses();
+	    });
+	  },
+	  init: function init(movieId, trailerId) {
+	    this.removeTrailers();
+
+	    this.movie = movieId;
+	    this.trailer = trailerId;
+
+	    this.buildTemplate();
+	  }
 	};
 
 /***/ }),
@@ -104,6 +130,7 @@
 
 	var Handlebars = __webpack_require__(3);
 	var util = __webpack_require__(4);
+	var Trailer = __webpack_require__(1);
 
 	module.exports = {
 	  dates: [{
@@ -184,6 +211,8 @@
 	    }
 	  }],
 	  allContainers: null,
+	  id: 1,
+	  index: 0,
 
 	  loadImage: function loadImage(path, ref) {
 	    var _this = this;
@@ -197,37 +226,66 @@
 	      _this.allContainers[ref].classList.add('loaded');
 	    }, false);
 	  },
-	  init: function init() {
-	    var _this2 = this;
+	  buildMovieObject: function buildMovieObject(movie) {
+	    movie.id = this.id < 10 ? '0' + this.id : this.id;
+	    movie.label = util.formatString(movie.title);
+	    movie.date = {};
+	    movie.date.theme = this.dates[this.index].theme;
+	    movie.date.day = this.dates[this.index].day;
+	    movie.arrows.top = this.id === 1 ? false : true;
+	    movie.arrows.bottom = this.id === 31 ? false : true;
 
-	    var main = document.getElementsByTagName('main')[0];
+	    return movie;
+	  },
+	  bindEvents: function bindEvents() {
+	    // Bind the date nav arrows
+
+	    // Bind play icons
+	    var playIcons = document.querySelectorAll('.play-icon-container');
+	    playIcons.forEach(function (icon) {
+	      icon.addEventListener('click', function () {
+	        var movieId = this.attributes['data-movie'].value;
+	        var trailerId = this.attributes['data-trailer'].value;
+	        Trailer.init(movieId, trailerId);
+	      });
+	    });
+	  },
+	  buildTemplate: function buildTemplate(context) {
 	    var movieTemplate = document.getElementById('movie-template');
 	    var source = movieTemplate.innerHTML;
 	    var template = Handlebars.compile(source);
-	    var id = 1;
-	    var index = 0;
+	    var html = template(context);
+
+	    this.insertTemplate(html);
+	  },
+	  insertTemplate: function insertTemplate(html) {
+	    var main = document.getElementsByTagName('main')[0];
+	    main.innerHTML += html;
+	  },
+	  buildAllMovies: function buildAllMovies() {
+	    var _this2 = this;
+
+	    var html = void 0;
 	    var containerID = void 0;
 
 	    this.movies.map(function (movie) {
-	      movie.id = id < 10 ? '0' + id : id;
-	      movie.label = util.formatString(movie.title);
-	      movie.date = {};
-	      movie.date.theme = _this2.dates[index].theme;
-	      movie.date.day = _this2.dates[index].day;
-	      movie.arrows.top = id === 1 ? false : true;
-	      movie.arrows.bottom = id === 31 ? false : true;
-
-	      var context = movie;
-	      var html = template(context);
-	      main.innerHTML += html;
+	      var context = _this2.buildMovieObject(movie);
+	      _this2.buildTemplate(context);
 
 	      _this2.allContainers = document.querySelectorAll('.day-outer-container');
-	      containerID = id - 1;
+	      containerID = _this2.id - 1;
 
 	      _this2.loadImage(movie.details.backdrop, containerID);
-	      index = index++ === 7 ? 0 : index++;
-	      id++;
+
+	      _this2.index = _this2.index++ === 7 ? 0 : _this2.index++;
+	      _this2.id++;
 	    });
+	  },
+	  init: function init() {
+	    // Make reuqest to movies JSON
+	    // Make reuqest to day/themes JSON
+
+	    this.buildAllMovies();
 	  }
 	};
 

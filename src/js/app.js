@@ -5,5 +5,5 @@ const calendar = require('./modules/movieBuilder');
   "use strict"
 
   calendar.init();
-  trailer.init();
+  calendar.bindEvents();
 })();

@@ -113,6 +113,7 @@ nav a {
   position: absolute;
   right: 0;
   top: 0;
+  transition: transform 1s 0.15s ease;
   width: 100%;
   z-index: 2; }
 
@@ -180,6 +181,7 @@ nav a {
 
 .play-icon-container {
   height: 103px;
+  transition: all 1s ease;
   width: 103px; }
 
 .play-icon {
@@ -202,6 +204,7 @@ h2 {
   margin-bottom: 2px;
   padding: 10px 10px;
   text-transform: uppercase;
+  transition: transform 1s 0.2s ease;
   width: 100%; }
 
 .movie-details-container {
@@ -210,7 +213,8 @@ h2 {
   color: #fff;
   display: flex;
   margin-bottom: 10px;
-  padding: 5px 10px; }
+  padding: 5px 10px;
+  transition: transform 1s 0.1s ease; }
   .movie-details-container span {
     margin-right: 20px; }
   .movie-details-container svg {
@@ -224,7 +228,8 @@ h2 {
   background: #fff;
   display: flex;
   min-height: 250px;
-  padding: 10px 10px; }
+  padding: 10px 10px;
+  transition: transform 1s ease; }
 
 .movie-cover-container {
   margin-right: 10px; }
@@ -285,6 +290,16 @@ h2 {
     clip-path: polygon(0 0, 100% 75px, 100% 100%, 0 100%); }
   .day-outer-container.loaded .primary-movie-container {
     opacity: 1; }
+  .day-outer-container.trailer .day-inner-container {
+    opacity: 0; }
+  .day-outer-container.trailer .date-display-outer-container,
+  .day-outer-container.trailer .movie-card-content-container,
+  .day-outer-container.trailer .movie-details-container,
+  .day-outer-container.trailer h2 {
+    transform: translateX(100vw); }
+  .day-outer-container.trailer .play-icon-container {
+    opacity: 0;
+    transform: translateX(-100vh); }
 
 .day-inner-container {
   display: flex;
@@ -293,8 +308,6 @@ h2 {
   transition: opacity 1s ease;
   width: 100%;
   z-index: 2; }
-  .day-inner-container.trailer {
-    opacity: 0; }
 
 .icons-container {
   display: flex; }

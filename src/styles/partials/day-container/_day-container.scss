@@ -38,6 +38,24 @@
       opacity: 1;
     }
   }
+
+  &.trailer {
+    .day-inner-container {
+      opacity: 0;
+    }
+
+    .date-display-outer-container,
+    .movie-card-content-container,
+    .movie-details-container,
+    h2 {
+      transform: translateX(100vw);
+    }
+
+    .play-icon-container {
+      opacity: 0;
+      transform: translateX(-100vh);
+    }
+  }
 }
 
 .day-inner-container {
@@ -47,10 +65,6 @@
   transition: opacity 1s ease;
   width: 100%;
   z-index: 2;
-
-  &.trailer {
-    opacity: 0;
-  }
 }
 
 .icons-container {
