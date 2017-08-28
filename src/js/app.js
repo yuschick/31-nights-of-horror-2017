@@ -1,6 +1,9 @@
-// const util = require('./util');
+const trailer = require('./modules/trailer');
+const calendar = require('./modules/movieBuilder');
 
 (function() {
   "use strict"
-  // const ls = util.localStorage;
+
+  calendar.init();
+  trailer.init();
 })();

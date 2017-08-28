@@ -27,5 +27,10 @@ module.exports = {
         presets: ['es2015']
       }
     }]
-  }
+  },
+  resolve: {
+    alias: {
+       handlebars: 'handlebars/dist/handlebars.min.js'
+    }
+}
 };

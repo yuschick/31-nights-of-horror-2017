@@ -87,7 +87,7 @@ header {
   justify-content: space-between; }
 
 .logo {
-  height: 50px; }
+  height: 40px; }
 
 nav ul {
   display: flex; }
@@ -113,7 +113,8 @@ nav a {
   position: absolute;
   right: 0;
   top: 0;
-  width: 100%; }
+  width: 100%;
+  z-index: 2; }
 
 .date-display-column-container {
   align-items: center;
@@ -169,6 +170,8 @@ nav a {
   align-items: center;
   display: flex;
   justify-content: space-around;
+  opacity: 0;
+  transition: opacity 1s ease;
   width: 100%; }
   .primary-movie-container:nth-of-type(odd) {
     margin-top: -100px; }
@@ -234,11 +237,36 @@ h2 {
   justify-content: space-between;
   width: calc(100% - 150px); }
 
+.trailer-container {
+  bottom: 0;
+  display: none;
+  left: 0;
+  margin-top: -75px;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: opacity 1s ease; }
+  .trailer-container.active {
+    display: block;
+    opacity: 1; }
+
+.trailer {
+  height: 100%;
+  width: 100%; }
+
+.close-icon {
+  background: red;
+  cursor: pointer;
+  left: 0;
+  padding: 10px;
+  position: absolute;
+  top: 50%; }
+
 .day-outer-container {
-  background-image: url("https://filmgrab.files.wordpress.com/2016/09/thewitch022.jpg");
+  background-image: url("../images/loading.svg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
   height: 100vh;
   margin-top: -55px;
   overflow: hidden;
@@ -255,10 +283,18 @@ h2 {
     margin-top: 0; }
   .day-outer-container:last-child {
     clip-path: polygon(0 0, 100% 75px, 100% 100%, 0 100%); }
+  .day-outer-container.loaded .primary-movie-container {
+    opacity: 1; }
 
 .day-inner-container {
   display: flex;
-  height: 100%; }
+  height: 100%;
+  position: relative;
+  transition: opacity 1s ease;
+  width: 100%;
+  z-index: 2; }
+  .day-inner-container.trailer {
+    opacity: 0; }
 
 .icons-container {
   display: flex; }
