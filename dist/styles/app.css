@@ -72,6 +72,17 @@ ul {
 [aria-disabled] {
   cursor: default; }
 
+.loading-icon-container {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 100%; }
+
+.loading-icon {
+  height: 350px;
+  width: 250px; }
+
 header {
   background: rgba(0, 0, 0, 0.9);
   left: 0;
@@ -204,7 +215,7 @@ h2 {
   margin-bottom: 2px;
   padding: 10px 10px;
   text-transform: uppercase;
-  transition: transform 1s 0.2s ease;
+  transition: transform 0.75s 0.2s ease;
   width: 100%; }
 
 .movie-details-container {
@@ -214,7 +225,7 @@ h2 {
   display: flex;
   margin-bottom: 10px;
   padding: 5px 10px;
-  transition: transform 1s 0.1s ease; }
+  transition: transform 0.75s 0.1s ease; }
   .movie-details-container span {
     margin-right: 20px; }
   .movie-details-container svg {
@@ -229,7 +240,7 @@ h2 {
   display: flex;
   min-height: 250px;
   padding: 10px 10px;
-  transition: transform 1s ease; }
+  transition: transform 0.75s ease; }
 
 .movie-cover-container {
   margin-right: 10px; }
@@ -261,16 +272,22 @@ h2 {
   width: 100%; }
 
 .close-icon {
-  background: red;
+  bottom: 75px;
   cursor: pointer;
-  left: 0;
+  height: 106px;
   padding: 10px;
+  opacity: 0.7;
   position: absolute;
-  top: 50%; }
+  left: 1vw;
+  transition: opacity 0.25s ease;
+  width: 106px; }
+  .close-icon:hover {
+    opacity: 1; }
 
 .day-outer-container {
-  background-image: url("../images/loading.svg");
+  background-image: url("../images/icon-loading.svg");
   background-position: center;
+  background-size: 250px 350px;
   background-repeat: no-repeat;
   height: 100vh;
   margin-top: -55px;
@@ -291,15 +308,18 @@ h2 {
   .day-outer-container.loaded .primary-movie-container {
     opacity: 1; }
   .day-outer-container.trailer .day-inner-container {
-    opacity: 0; }
+    opacity: 0;
+    pointer-events: none; }
   .day-outer-container.trailer .date-display-outer-container,
   .day-outer-container.trailer .movie-card-content-container,
   .day-outer-container.trailer .movie-details-container,
   .day-outer-container.trailer h2 {
-    transform: translateX(100vw); }
+    transform: translateX(50vw);
+    transition: transform 1s ease; }
   .day-outer-container.trailer .play-icon-container {
     opacity: 0;
-    transform: translateX(-100vh); }
+    transform: translateX(-50vh);
+    transition: transform 1s ease; }
 
 .day-inner-container {
   display: flex;

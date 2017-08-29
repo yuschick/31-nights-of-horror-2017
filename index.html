@@ -38,18 +38,22 @@
         </div>
       </div>
     </header>
-    <main></main>
+    <main>
+      <div class='loading-icon-container'>
+        <img class='loading-icon' src="./dist/images/icon-loading.svg" alt="Loading" />
+      </div>
+    </main>
   </div>
 
   <script id='trailer-template' type='text/x-handlebars-template'>
     <iframe class='trailer' src="https://www.youtube.com/embed/{{trailer}}?rel=0&amp;controls=0&amp;autoplay=1&amp;showinfo=0?ecver=2" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe>
     <div class='close-icon'>
-      CLOSE
+      <img src='./src/images/icon-close.svg' alt="Close Trailer" />
     </div>
   </script>
 
   <script id='movie-template' type='text/x-handlebars-template'>
-    <section class='day-outer-container' data-movie='{{label}}'>
+    <section id='movie-{{id}}' class='day-outer-container' data-movie='{{label}}'>
       <div class='trailer-container'></div>
       <section class='container day-inner-container'>
         <div class='date-display-outer-container'>
@@ -86,8 +90,8 @@
                 <path d="M21,76v158.7c0,5.2,4.2,9.3,9.3,9.3h195.4c5.1,0,9.3-4.2,9.3-9.3V76H21z M76.8,225.3H39.6V188h37.2V225.3z M76.8,178.7H39.6v-37.3h37.2V178.7z M76.8,132H39.6V94.7h37.2V132z M123.4,225.3H86.1V188h37.2V225.3z M123.4,178.7H86.1v-37.3 h37.2V178.7z M123.4,132H86.1V94.7h37.2V132z M169.9,225.3h-37.2V188h37.2V225.3z M169.9,178.7h-37.2v-37.3h37.2V178.7z M169.9,132 h-37.2V94.7h37.2V132z M216.4,225.3h-37.2V188h37.2V225.3z M216.4,178.7h-37.2v-37.3h37.2V178.7z M216.4,132h-37.2V94.7h37.2V132z M235,48.3V67H21V48.3c0-5.1,4.2-9.3,9.3-9.3H67V10h20v29h82V10h20v29h36.7C230.8,39,235,43.2,235,48.3z"/>
               </svg>
               <span>{{details.release}}</span>
-              <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" viewBox="1 -1 52 52" xml:space="preserve">
-                <path d="M39.9 4.3L39.9 4.3c-7.1-7.1-18.6-7.1-25.7 0l0 0C7.8 10.7 7 22.8 12.5 30L27 51l14.5-21C47 22.8 46.2 10.7 39.9 4.3zM27.2 23c-3.3 0-6-2.7-6-6s2.7-6 6-6 6 2.7 6 6S30.5 23 27.2 23z"/>
+              <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" viewBox="0 0 20 17.5" xml:space="preserve">
+                <polygon fill='none' stroke='#FFFFFF' stroke-miterlimit='10' stroke-width='2' points="0.5 0.5 0.5 13.5 4.5 13.5 4.5 16.5 8.5 13.5 19.5 13.5 19.5 0.5 "/>
               </svg>
               <span>{{details.language}}</span>
             </div>
@@ -129,6 +133,8 @@
       </section>
     </section>
   </script>
+
+  <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
   <script src="./dist/js/app.js"></script>
 </body>
 </html>

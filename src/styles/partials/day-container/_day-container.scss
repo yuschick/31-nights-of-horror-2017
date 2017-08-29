@@ -5,8 +5,9 @@
 @import './trailer';
 
 .day-outer-container {
-  background-image: url('../images/loading.svg');
+  background-image: url('../images/icon-loading.svg');
   background-position: center;
+  background-size: 250px 350px;
   background-repeat: no-repeat;
   height: 100vh;
   margin-top: -55px;
@@ -42,18 +43,21 @@
   &.trailer {
     .day-inner-container {
       opacity: 0;
+      pointer-events: none;
     }
 
     .date-display-outer-container,
     .movie-card-content-container,
     .movie-details-container,
     h2 {
-      transform: translateX(100vw);
+      transform: translateX(50vw);
+      transition: transform 1s ease;
     }
 
     .play-icon-container {
       opacity: 0;
-      transform: translateX(-100vh);
+      transform: translateX(-50vh);
+      transition: transform 1s ease;
     }
   }
 }

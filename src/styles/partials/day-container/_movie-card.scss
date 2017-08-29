@@ -12,7 +12,7 @@ h2 {
   margin-bottom: $vspace/5;
   padding: $vspace $hspace;
   text-transform: uppercase;
-  transition: transform 1s 0.2s ease;
+  transition: transform 0.75s 0.2s ease;
   width: 100%;
 }
 
@@ -23,7 +23,7 @@ h2 {
   display: flex;
   margin-bottom: $vspace;
   padding: $vspace/2 $hspace;
-  transition: transform 1s 0.1s ease;
+  transition: transform 0.75s 0.1s ease;
 
   span {
     margin-right: $hspace*2;
@@ -45,7 +45,7 @@ h2 {
   display: flex;
   min-height: 250px;
   padding: $vspace $hspace;
-  transition: transform 1s ease;
+  transition: transform 0.75s ease;
 }
 
 .movie-cover-container {

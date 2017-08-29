@@ -21,10 +21,17 @@
 }
 
 .close-icon {
-  background: red;
+  bottom: 75px;
   cursor: pointer;
-  left: 0;
+  height: 106px;
   padding: $hspace;
+  opacity: 0.7;
   position: absolute;
-  top: 50%;
+  left: 1vw;
+  transition: opacity 0.25s ease;
+  width: 106px;
+
+  &:hover {
+    opacity: 1;
+  }
 }
