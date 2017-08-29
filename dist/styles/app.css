@@ -181,19 +181,29 @@ nav a {
 .primary-movie-container {
   align-items: center;
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   opacity: 0;
+  padding: 0 20px;
   transition: opacity 1s ease;
   width: 100%; }
   .primary-movie-container:nth-of-type(odd) {
     margin-top: -100px; }
   .primary-movie-container:nth-of-type(even) {
     margin-top: -75px; }
+  @media screen and (max-width: 750px) {
+    .primary-movie-container {
+      flex-direction: column;
+      justify-content: center;
+      padding-top: 75px; } }
 
 .play-icon-container {
   height: 103px;
   transition: all 1s ease;
   width: 103px; }
+  @media screen and (max-width: 750px) {
+    .play-icon-container {
+      margin-bottom: 20px; } }
 
 .play-icon {
   cursor: pointer;
@@ -205,6 +215,7 @@ nav a {
 .movie-card-container {
   max-width: 750px;
   opacity: 0.95;
+  padding-left: 1rem;
   width: 100%; }
 
 h2 {
@@ -234,6 +245,8 @@ h2 {
     width: 20px; }
     .movie-details-container svg path {
       fill: rgba(255, 255, 255, 0.9); }
+    .movie-details-container svg polygon {
+      stroke: rgba(255, 255, 255, 0.9); }
 
 .movie-card-content-container {
   background: #fff;
@@ -243,7 +256,9 @@ h2 {
   transition: transform 0.75s ease; }
 
 .movie-cover-container {
-  margin-right: 10px; }
+  margin-right: 10px;
+  max-width: 150px;
+  width: 25%; }
   .movie-cover-container img {
     display: block; }
 
@@ -251,7 +266,7 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: calc(100% - 150px); }
+  width: 75%; }
 
 .trailer-container {
   bottom: 0;
@@ -314,12 +329,10 @@ h2 {
   .day-outer-container.trailer .movie-card-content-container,
   .day-outer-container.trailer .movie-details-container,
   .day-outer-container.trailer h2 {
-    transform: translateX(50vw);
-    transition: transform 1s ease; }
+    transform: translateX(50vw); }
   .day-outer-container.trailer .play-icon-container {
     opacity: 0;
-    transform: translateX(-50vh);
-    transition: transform 1s ease; }
+    transform: translateX(-50vw); }
 
 .day-inner-container {
   display: flex;

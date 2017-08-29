@@ -51,13 +51,11 @@
     .movie-details-container,
     h2 {
       transform: translateX(50vw);
-      transition: transform 1s ease;
     }
 
     .play-icon-container {
       opacity: 0;
-      transform: translateX(-50vh);
-      transition: transform 1s ease;
+      transform: translateX(-50vw);
     }
   }
 }

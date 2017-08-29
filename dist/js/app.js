@@ -49,11 +49,13 @@
 	var trailer = __webpack_require__(1);
 	var calendar = __webpack_require__(3);
 	var firebase = __webpack_require__(5);
+	var helpers = __webpack_require__(158);
 
 	(function () {
 	  "use strict";
 
 	  firebase.init();
+	  helpers.init();
 	  calendar.init();
 	})();
 
@@ -243,7 +245,7 @@
 	      _this2.allContainers = document.querySelectorAll('.day-outer-container');
 	      containerID = _this2.id - 1;
 
-	      _this2.loadImage(movie.details.backdrop, containerID);
+	      _this2.loadImage(movie.images.backdrop, containerID);
 
 	      _this2.index = _this2.index++ === 7 ? 0 : _this2.index++;
 	      _this2.id++;
@@ -26758,6 +26760,28 @@
 	module.exports = exports['default'];
 	//# sourceMappingURL=sw-controller.js.map
 
+
+/***/ }),
+/* 158 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	var Handlebars = __webpack_require__(2);
+
+	module.exports = {
+	  init: function init() {
+	    Handlebars.registerHelper("next", function (value) {
+	      var nextVal = parseInt(value) + 1;
+	      return nextVal < 10 ? "0" + nextVal : nextVal;
+	    });
+
+	    Handlebars.registerHelper("prev", function (value) {
+	      var prevVal = parseInt(value) - 1;
+	      return prevVal < 10 ? "0" + prevVal : prevVal;
+	    });
+	  }
+	};
 
 /***/ })
 /******/ ]);

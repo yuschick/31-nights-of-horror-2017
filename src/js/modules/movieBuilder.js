@@ -81,7 +81,7 @@ module.exports = {
       this.allContainers = document.querySelectorAll('.day-outer-container');
       containerID = this.id - 1;
 
-      this.loadImage(movie.details.backdrop, containerID);
+      this.loadImage(movie.images.backdrop, containerID);
 
       this.index = this.index++ === 7 ? 0 : this.index++;
       this.id++;

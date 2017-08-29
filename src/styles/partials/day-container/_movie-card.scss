@@ -1,6 +1,7 @@
 .movie-card-container {
   max-width: 750px;
   opacity: 0.95;
+  padding-left: 1rem;
   width: 100%;
 }
 
@@ -37,6 +38,10 @@ h2 {
     path {
       fill: rgba(255,255,255,.9);
     }
+
+    polygon {
+      stroke: rgba(255,255,255,.9);
+    }
   }
 }
 
@@ -50,6 +55,8 @@ h2 {
 
 .movie-cover-container {
   margin-right: $hspace;
+  max-width: 150px;
+  width: 25%;
 
   img {
     display: block;
@@ -60,5 +67,5 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: calc(100% - 150px);
+  width: 75%;
 }
