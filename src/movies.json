@@ -12,8 +12,8 @@
     "amazon": "https://www.amazon.com/gp/product/B01BT3SCUG"
   },
   "images": {
-    "backdrop": "./dist/images/backdrops/the-witch.jpg",
-    "cover": "./dist/images/covers/the-witch.jpg"
+    "backdrop": "./src/images/backdrops/the-witch.jpg",
+    "cover": "./src/images/covers/the-witch.jpg"
   }
 }, {
   "title": "The Devil's Candy",
@@ -28,7 +28,75 @@
     "amazon": "https://www.amazon.com/Devils-Candy-Ethan-Embry/dp/B06XK24WPZ"
   },
   "images": {
-    "backdrop": "./dist/images/backdrops/the-devils-candy.jpg",
-    "cover": "./dist/images/covers/the-devils-candy.jpg"
+    "backdrop": "./src/images/backdrops/the-devils-candy.jpg",
+    "cover": "./src/images/covers/the-devils-candy.jpg"
+  }
+}, {
+  "title": "Sinister",
+  "details": {
+    "release": "2012-12-12",
+    "language": "English",
+    "description": "True-crime writer Ellison Oswalt moves himself and his family into a house where a horrific crime took place earlier, but his family doesn't know. He begins researching the crime so that he can write a new book about it to help his flailing career. He uses some 'snuff' film footage he finds in the house to help him in his research, but he soon finds more than he bargained for. There is a figure in each of the films but who or what is it? As a result, his family start to suffer (as does he) and things take a turn for the worse. Will they survive?"
+  },
+  "links": {
+    "trailer": "_kbQAJR9YWQ",
+    "imdb": "tt1922777",
+    "amazon": "https://www.amazon.com/Sinister-Ethan-Hawke/dp/B00BHNR1KQ",
+    "netflix": "https://www.netflix.com/title/70221486"
+  },
+  "images": {
+    "backdrop": "./src/images/backdrops/sinister.jpg",
+    "cover": "./src/images/covers/sinister.jpg"
+  }
+}, {
+  "title": "Motel Hell",
+  "details": {
+    "release": "1980-10-24",
+    "language": "English",
+    "description": "Farmer Vincent kidnaps unsuspecting travellers and is burying them in his garden. Unfortunately for his victims, they are not dead. He feeds his victims to prepare them for his roadside stand. His motto is: It takes all kinds of critters...to make Farmer Vincents fritters. The movie is gory, but is also a parody of slasher movies like Last House on the Left."
+  },
+  "links": {
+    "trailer": "k4AR3BgaCdA",
+    "imdb": "tt0081184",
+    "youtube": "https://www.youtube.com/watch?v=KD9Uz30OHxQ",
+    "amazon": "https://www.amazon.com/dp/B001MLEZI4"
+  },
+  "images": {
+    "backdrop": "./src/images/backdrops/motel-hell.jpg",
+    "cover": "./src/images/covers/motel-hell.jpg"
+  }
+}, {
+  "title": "The Loved Ones",
+  "details": {
+    "release": "1980-10-24",
+    "language": "English",
+    "description": "Farmer Vincent kidnaps unsuspecting travellers and is burying them in his garden. Unfortunately for his victims, they are not dead. He feeds his victims to prepare them for his roadside stand. His motto is: It takes all kinds of critters...to make Farmer Vincents fritters. The movie is gory, but is also a parody of slasher movies like Last House on the Left."
+  },
+  "links": {
+    "trailer": "iYUL-iIcrxk",
+    "imdb": "tt1316536",
+    "amazon": "https://www.amazon.com/Loved-Ones-Xavier-Samuel/dp/B0098VXM4S",
+    "netflix": "https://www.netflix.com/title/70123254"
+  },
+  "images": {
+    "backdrop": "./src/images/backdrops/the-loved-ones.jpg",
+    "cover": "./src/images/covers/the-loved-ones.jpg"
+  }
+}, {
+  "title": "Mother's Day",
+  "details": {
+    "release": "2010-09-23",
+    "language": "English",
+    "description": "Three brothers on the run from the law head for home, only to discover that their mother lost the house in a foreclosure. Mother ingeniously orchestrates her sons' escape, teaching the house's new owners and their guests a few lessons along the way."
+  },
+  "links": {
+    "trailer": "aTaXBnHhrDs",
+    "imdb": "tt1434435",
+    "youtube": "https://www.youtube.com/watch?v=HmfQ9LcQpRk",
+    "amazon": "https://www.amazon.com/Mothers-Day-Rebecca-DeMornay/dp/B008052BRC"
+  },
+  "images": {
+    "backdrop": "./src/images/backdrops/mothers-day.jpg",
+    "cover": "./src/images/covers/mothers-day.jpg"
   }
 }]

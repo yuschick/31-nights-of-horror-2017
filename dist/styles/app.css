@@ -168,7 +168,6 @@ nav a {
   cursor: pointer;
   height: 12px;
   fill: #fff;
-  margin: 10px 0;
   opacity: 0.5;
   transition: opacity 0.25s ease;
   width: 12px; }
