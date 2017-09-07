@@ -212,7 +212,7 @@ nav a {
     opacity: 0.9; }
 
 .movie-card-container {
-  max-width: 750px;
+  max-width: 765px;
   opacity: 0.95;
   padding-left: 1rem;
   width: 100%; }
@@ -221,7 +221,7 @@ h2 {
   background: #000;
   color: #fff;
   display: block;
-  font: 1.75rem/1 "Roboto Slab", serif;
+  font: 1.7rem/1 "Roboto Slab", serif;
   margin-bottom: 2px;
   padding: 10px 10px;
   text-transform: uppercase;
@@ -250,7 +250,6 @@ h2 {
 .movie-card-content-container {
   background: #fff;
   display: flex;
-  min-height: 250px;
   padding: 10px 10px;
   transition: transform 0.75s ease; }
 
@@ -345,6 +344,7 @@ h2 {
   display: flex; }
 
 .stream-icon {
+  -webkit-backface-visibility: hidden;
   height: 34px;
   filter: grayscale(100%);
   margin-right: 10px;
@@ -352,6 +352,8 @@ h2 {
   width: 34px; }
   .stream-icon:hover {
     filter: none; }
+  .stream-icon a, .stream-icon img {
+    display: block; }
 
 .root {
   min-height: 100vh;

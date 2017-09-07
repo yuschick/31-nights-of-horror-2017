@@ -32,9 +32,12 @@ module.exports = {
   buildMovieObject(movie) {
     movie.id = this.id < 10 ? `0${this.id}` : this.id;
     movie.label = util.formatString(movie.title);
+    
     movie.date = {};
     movie.date.theme = this.themes[this.index].theme;
     movie.date.day = this.themes[this.index].day;
+    movie.date.happyhalloween = this.id === 31 ? 'Happy Halloween!' : false;
+
     movie.arrows = {};
     movie.arrows.top = this.id === 1 ? false : true;
     movie.arrows.bottom = this.id === 31 ? false : true;
@@ -43,9 +46,6 @@ module.exports = {
   },
 
   bindEvents() {
-    // Bind the date nav arrows
-
-    // Bind play icons
     const playIcons = document.querySelectorAll('.play-icon-container');
     playIcons.forEach(icon => {
       icon.addEventListener('click', function() {
@@ -65,6 +65,25 @@ module.exports = {
     this.insertTemplate(html);
   },
 
+  moveToDate() {
+    const rightNow = new Date();
+    const month = rightNow.getMonth();
+
+    if (month === 9) {
+      let date = rightNow.getDate();
+      let section;
+      let pos;
+
+      if (date < 10) {
+        date = `0${date}`;
+      }
+
+      section = document.getElementById(date);
+      pos = section.offsetTop;
+      window.scroll(0, pos - 25);
+    }
+  },
+
   insertTemplate(html) {
     const main = document.getElementsByTagName('main')[0];
     main.innerHTML += html;
@@ -80,12 +99,15 @@ module.exports = {
 
       this.allContainers = document.querySelectorAll('.day-outer-container');
       containerID = this.id - 1;
-
       this.loadImage(movie.images.backdrop, containerID);
 
-      this.index = this.index++ === 7 ? 0 : this.index++;
+      this.index++;
+      if (this.index > 6) this.index = 0;
+
       this.id++;
     });
+
+    this.moveToDate();
   },
 
   init() {

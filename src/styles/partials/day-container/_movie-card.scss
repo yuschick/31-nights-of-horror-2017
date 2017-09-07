@@ -1,5 +1,5 @@
 .movie-card-container {
-  max-width: 750px;
+  max-width: 765px;
   opacity: 0.95;
   padding-left: 1rem;
   width: 100%;
@@ -9,7 +9,7 @@ h2 {
   background: #000;
   color: #fff;
   display: block;
-  font: 1.75rem/1 $secondaryFont;
+  font: 1.7rem/1 $secondaryFont;
   margin-bottom: $vspace/5;
   padding: $vspace $hspace;
   text-transform: uppercase;
@@ -48,7 +48,6 @@ h2 {
 .movie-card-content-container {
   background: #fff;
   display: flex;
-  min-height: 250px;
   padding: $vspace $hspace;
   transition: transform 0.75s ease;
 }

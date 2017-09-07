@@ -15,7 +15,7 @@ module.exports = {
     }
   },
   formatString(string) {
-    let label = string.replace(/[0-9]/g, '').replace(/ /g,'-').replace(/'/g,'');
+    let label = string.replace(/[0-9]/g, '').replace(/ /g,'-').replace(/'/g,'').replace(/:/g,'');
     while (label.charAt(0) === '-') {
      label = label.substr(1);
     }

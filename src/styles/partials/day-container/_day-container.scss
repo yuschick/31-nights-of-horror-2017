@@ -74,6 +74,7 @@
 }
 
 .stream-icon {
+  -webkit-backface-visibility: hidden;
   height: 34px;
   filter: grayscale(100%);
   margin-right: $hspace;
@@ -82,5 +83,9 @@
 
   &:hover {
     filter: none;
+  }
+
+  a, img {
+    display: block;
   }
 }

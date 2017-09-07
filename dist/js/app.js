@@ -198,9 +198,12 @@
 	  buildMovieObject: function buildMovieObject(movie) {
 	    movie.id = this.id < 10 ? '0' + this.id : this.id;
 	    movie.label = util.formatString(movie.title);
+
 	    movie.date = {};
 	    movie.date.theme = this.themes[this.index].theme;
 	    movie.date.day = this.themes[this.index].day;
+	    movie.date.happyhalloween = this.id === 31 ? 'Happy Halloween!' : false;
+
 	    movie.arrows = {};
 	    movie.arrows.top = this.id === 1 ? false : true;
 	    movie.arrows.bottom = this.id === 31 ? false : true;
@@ -208,9 +211,6 @@
 	    return movie;
 	  },
 	  bindEvents: function bindEvents() {
-	    // Bind the date nav arrows
-
-	    // Bind play icons
 	    var playIcons = document.querySelectorAll('.play-icon-container');
 	    playIcons.forEach(function (icon) {
 	      icon.addEventListener('click', function () {
@@ -228,6 +228,24 @@
 
 	    this.insertTemplate(html);
 	  },
+	  moveToDate: function moveToDate() {
+	    var rightNow = new Date();
+	    var month = rightNow.getMonth();
+
+	    if (month === 9) {
+	      var date = rightNow.getDate();
+	      var section = void 0;
+	      var pos = void 0;
+
+	      if (date < 10) {
+	        date = '0' + date;
+	      }
+
+	      section = document.getElementById(date);
+	      pos = section.offsetTop;
+	      window.scroll(0, pos - 25);
+	    }
+	  },
 	  insertTemplate: function insertTemplate(html) {
 	    var main = document.getElementsByTagName('main')[0];
 	    main.innerHTML += html;
@@ -244,12 +262,15 @@
 
 	      _this2.allContainers = document.querySelectorAll('.day-outer-container');
 	      containerID = _this2.id - 1;
-
 	      _this2.loadImage(movie.images.backdrop, containerID);
 
-	      _this2.index = _this2.index++ === 7 ? 0 : _this2.index++;
+	      _this2.index++;
+	      if (_this2.index > 6) _this2.index = 0;
+
 	      _this2.id++;
 	    });
+
+	    this.moveToDate();
 	  },
 	  init: function init() {
 	    var _this3 = this;
@@ -288,7 +309,7 @@
 	    }
 	  },
 	  formatString: function formatString(string) {
-	    var label = string.replace(/[0-9]/g, '').replace(/ /g, '-').replace(/'/g, '');
+	    var label = string.replace(/[0-9]/g, '').replace(/ /g, '-').replace(/'/g, '').replace(/:/g, '');
 	    while (label.charAt(0) === '-') {
 	      label = label.substr(1);
 	    }

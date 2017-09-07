@@ -70,8 +70,9 @@
                 <span>{{id}}</span>
               </div>
               <div class='theme-container'>
-                <span>{{date.theme}}</span>
-                <span>{{date.day}}</span>
+                <span>{{date.theme}}</span> {{#unless date.happyhalloween}}
+                <span>{{date.day}}</span> {{/unless}} {{#if date.happyhalloween}}
+                <span>{{date.happyhalloween}}</span> {{/if}}
               </div>
             </div>
             {{#if arrows.bottom}}
@@ -127,7 +128,11 @@
                   <div class='stream-icon'>
                     <a href='{{links.netflix}}' target='_blank'><img src='./src/images/icon-netflix.jpg' alt='Watch {{title}} on Netflix' /></a>
                   </div>
-                  {{/if}} {{#if links.youtube}}
+                  {{/if}} {{#if links.shudder}}
+                  <div class='stream-icon'>
+                    <a href='{{links.shudder}}' target='_blank'><img src='./src/images/icon-shudder.jpg' alt='Watch {{title}} on Shudder' /></a>
+                  </div>
+                  {{/if}}{{#if links.youtube}}
                   <div class='stream-icon'>
                     <a href='https://www.youtube.com/watch?v={{links.youtube}}' target='_blank'><img src='./src/images/icon-youtube.jpg' alt='Watch {{title}} on Youtube' /></a>
                   </div>
