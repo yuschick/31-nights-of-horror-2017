@@ -1,6 +1,7 @@
 *,
 ::after,
 ::before {
+  -webkit-backface-visibility: hidden;
   background-repeat: no-repeat;
   box-sizing: inherit;
   border: 0;

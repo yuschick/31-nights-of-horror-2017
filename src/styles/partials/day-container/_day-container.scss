@@ -74,16 +74,15 @@
 }
 
 .stream-icon {
-  -webkit-backface-visibility: hidden;
   height: 34px;
-  filter: grayscale(100%);
+  // filter: grayscale(100%);
   margin-right: $hspace;
-  transition: filter 0.15s ease;
+  // transition: filter 0.15s ease;
   width: 34px;
 
-  &:hover {
-    filter: none;
-  }
+  // &:hover {
+  //   filter: none;
+  // }
 
   a, img {
     display: block;

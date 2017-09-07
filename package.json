@@ -9,7 +9,8 @@
     "watch:scripts": "webpack -w",
     "build": "npm-run-all --parallel build:*",
     "build:styles": "postcss -u autoprefixer --no-map -r ./dist/styles/*.css",
-    "build:images": "imagemin ./src/images/**/* -o ./dist/images/**/*",
+    "build:backdrops": "imagemin ./src/images/backdrops/*.jpg -o ./dist/images/backdrops/",
+    "build:covers": "imagemin ./src/images/covers/*.jpg -o ./dist/images/covers/",
     "build:minifycss": "minify ./dist/styles/app.css",
     "build:minifyjs": "minify ./dist/js/app.js"
   },

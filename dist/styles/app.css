@@ -1,6 +1,7 @@
 *,
 ::after,
 ::before {
+  -webkit-backface-visibility: hidden;
   background-repeat: no-repeat;
   box-sizing: inherit;
   border: 0;
@@ -344,14 +345,9 @@ h2 {
   display: flex; }
 
 .stream-icon {
-  -webkit-backface-visibility: hidden;
   height: 34px;
-  filter: grayscale(100%);
   margin-right: 10px;
-  transition: filter 0.15s ease;
   width: 34px; }
-  .stream-icon:hover {
-    filter: none; }
   .stream-icon a, .stream-icon img {
     display: block; }
 
