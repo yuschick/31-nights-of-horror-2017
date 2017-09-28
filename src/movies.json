@@ -1,0 +1,531 @@
+[{
+  "title": "The VVitch",
+  "details": {
+    "release": "2016-02-19",
+    "language": "English",
+    "description": "New England, 1630: William and Katherine try to lead a devout Christian life, homesteading on the edge of an impassible wilderness, with five children. When their newborn son mysteriously vanishes and their crops fail, the family begins to turn on one another. 'The Witch' is a chilling portrait of a family unraveling within their own sins, leaving them prey for an inescapable evil."
+  },
+  "links": {
+    "trailer": "gud8viI-P7Q",
+    "imdb": "tt4263482",
+    "youtube": "https://www.youtube.com/watch?v=itDbDcDHBRQ",
+    "amazon": "https://www.amazon.com/gp/product/B01BT3SCUG"
+  },
+  "images": {
+    "backdrop": "./dist/images/backdrops/the-witch.jpg",
+    "cover": "./dist/images/covers/the-witch.jpg"
+  }
+}, {
+  "title": "The Devil's Candy",
+  "details": {
+    "release": "2017-03-17",
+    "language": "English",
+    "description": "Hellish visions fan the artistic flame of Jesse, an artist who works on commission, since he and his wife Astrid and daughter Zooey decided to move in a bargain of a house in Texas. However, unbeknownst to Jesse, the dark force that is strongly pulsating inside the place, is insidiously creeping into his mind through an ongoing battering of evil static that, sooner or later, will compel the unaware vessel into a disturbingly wonderful artistic paroxysm."
+  },
+  "links": {
+    "trailer": "rtD3M86ZqDA",
+    "imdb": "tt4935372",
+    "amazon": "https://www.amazon.com/Devils-Candy-Ethan-Embry/dp/B06XK24WPZ"
+  },
+  "images": {
+    "backdrop": "./dist/images/backdrops/the-devils-candy.jpg",
+    "cover": "./dist/images/covers/the-devils-candy.jpg"
+  }
+}, {
+  "title": "30 Days of Night",
+  "details": {
+    "release": "2007-10-19",
+    "language": "English",
+    "description": "This is the story of an isolated Alaskan town that is plunged into darkness for a month each year when the sun sinks below the horizon. As the last rays of light fade, the town is attacked by a bloodthirsty gang of vampires bent on an uninterrupted orgy of destruction. Only the small town's husband-and-wife Sheriff team stand between the survivors and certain destruction."
+  },
+  "links": {
+    "trailer": "zXYO19Ig5hc",
+    "imdb": "tt0389722",
+    "youtube": "https://www.youtube.com/watch?v=gD-2xRY6NQQ",
+    "amazon": "https://www.amazon.com/30-Days-Night-Josh-Hartnett/dp/B0011FQQFG",
+    "netflix": "https://www.netflix.com/title/70060006"
+  },
+  "images": {
+    "backdrop": "./dist/images/backdrops/30-days-of-night.jpg",
+    "cover": "./dist/images/covers/30-days-of-night.jpg"
+  }
+}, {
+  "title": "Stage Fright",
+  "details": {
+    "release": "2014-04-03",
+    "language": "English",
+    "description": "In this genre-bending musical comedy, a starry-eyed teenager stuck in the kitchen of a snobby performing arts camp dreams of Broadway. She sneaks into an audition and lands the lead role. But just as rehearsals begin, blood starts to spill."
+  },
+  "links": {
+    "trailer": "CmzxIBTPfJA",
+    "imdb": "tt2190838",
+    "amazon": "https://www.amazon.com/Stage-Fright-Minnie-Driver/dp/B00JFQ96F0",
+    "youtube": "https://www.youtube.com/watch?v=GjfKZYQNZtc",
+    "dailymotion": "https://www.dailymotion.com/video/x2inxvh"
+  },
+  "images": {
+    "backdrop": "./dist/images/backdrops/stage-fright.jpg",
+    "cover": "./dist/images/covers/stage-fright.jpg"
+  }
+}, {
+  "title": "The Midnight Meat Train",
+  "details": {
+    "release": "2008-08-01",
+    "language": "English",
+    "description": "Struggling photographer Leon Kaufman's obsessive pursuit of dark subject matter leads him into the path of a serial killer, Mahogany, the subway murderer who stalks late-night commuters -- ultimately butchering them in the most gruesome ways imaginable."
+  },
+  "links": {
+    "trailer": "QHvnWuQQidg",
+    "imdb": "tt0805570",
+    "youtube": "https://www.youtube.com/watch?v=f6bHsABunNw",
+    "amazon": "https://www.amazon.com/Midnight-Meat-Train-Bradley-Cooper/dp/B001V7YENK",
+    "hulu": "https://www.hulu.com/watch/1105806",
+    "shudder": "https://www.shudder.com/watch/the-midnight-meat-train/2989565/1"
+  },
+  "images": {
+    "backdrop": "./dist/images/backdrops/the-midnight-meat-train.jpg",
+    "cover": "./dist/images/covers/the-midnight-meat-train.jpg"
+  }
+}, {
+  "title": "Mother's Day",
+  "details": {
+    "release": "2010-09-23",
+    "language": "English",
+    "description": "Three brothers on the run from the law head for home, only to discover that their mother lost the house in a foreclosure. Mother ingeniously orchestrates her sons' escape, teaching the house's new owners and their guests a few lessons along the way."
+  },
+  "links": {
+    "trailer": "aTaXBnHhrDs",
+    "imdb": "tt1434435",
+    "youtube": "https://www.youtube.com/watch?v=HmfQ9LcQpRk",
+    "amazon": "https://www.amazon.com/Mothers-Day-Rebecca-DeMornay/dp/B008052BRC"
+  },
+  "images": {
+    "backdrop": "./dist/images/backdrops/mothers-day.jpg",
+    "cover": "./dist/images/covers/mothers-day.jpg"
+  }
+}, {
+  "title": "A Nightmare on Elm Street 3: Dream Warriors",
+  "details": {
+    "release": "1987-02-22",
+    "language": "English",
+    "description": "It's been many years since Freddy Krueger's first victim, Nancy, came face-to-face with Freddy and his sadistic, evil ways. Now, Nancy's all grown up; she's put her frightening nightmares behind her and is helping teens cope with their dreams. Too bad Freddy's decided to herald his return by invading the kids' dreams and scaring them into committing suicide."
+  },
+  "links": {
+    "trailer": "8PlwfVhY_-Q",
+    "imdb": "tt0093629",
+    "amazon": "https://www.amazon.com/Nightmare-Elm-Street-Dream-Warriors/dp/B0049Z90EO"
+  },
+  "images": {
+    "backdrop": "./dist/images/backdrops/dream-warriors.jpg",
+    "cover": "./dist/images/covers/dream-warriors.jpg"
+  }
+}, {
+  "title": "Under the Shadow",
+  "details": {
+    "release": "2016-10-07",
+    "language": "Persian",
+    "description": "Living amidst the chaos of the Iran-Iraq war, Shideh is left alone to protect her young daughter, Dorsa. When a missile hits their apartment building but fails to explode, Shideh learns from a superstitious neighbor that the cursed missile might have brought in djinns - malevolent spirits that travel on the wind."
+  },
+  "links": {
+    "trailer": "kHVFP80Upxw",
+    "imdb": "tt4273292",
+    "amazon": "https://www.amazon.com/Under-Shadow-Narges-Rashidi/dp/B01LRM7BS8",
+    "netflix": "https://www.netflix.com/title/80096786"
+  },
+  "images": {
+    "backdrop": "./dist/images/backdrops/under-the-shadow.jpg",
+    "cover": "./dist/images/covers/under-the-shadow.jpg"
+  }
+}, {
+  "title": "Devil's Pass",
+  "details": {
+    "release": "2013-08-23",
+    "language": "English",
+    "description": "The Dyatlov Pass follows a group of American students on a trek to investigate the true life mystery of nine Russian skiers who befell unexplained deaths while skiing in the Russian mountains in 1959. To this day, their deaths have been one of the most bizarre unsolved mysteries of the 20th century."
+  },
+  "links": {
+    "trailer": "Mbq3dR-SEr4",
+    "imdb": "tt1905040",
+    "youtube": "https://www.youtube.com/watch?v=IPcxKw-_yNQ",
+    "amazon": "https://www.amazon.com/Devils-Pass-Richard-Reid/dp/B00EQ117QK",
+    "hulu": "https://www.hulu.com/watch/1121410",
+    "shudder": "https://www.shudder.com/watch/devils-pass/3015683/1"
+  },
+  "images": {
+    "backdrop": "./dist/images/backdrops/devils-pass.jpg",
+    "cover": "./dist/images/covers/devils-pass.jpg"
+  }
+}, {
+  "title": "Green Room",
+  "details": {
+    "release": "2016-05-13",
+    "language": "English",
+    "description": "A band straying into a secluded part of the Pacific Northwest stumbles onto a horrific act of violence. Because they are the only witnesses, they become the targets of a terrifying gang of skinheads who want to make sure all the evidence is eliminated."
+  },
+  "links": {
+    "trailer": "eP0Ic6-OShE",
+    "imdb": "tt4062536",
+    "amazon": "https://www.amazon.com/Green-Room-Anton-Yelchin/dp/B01HBYKHFA",
+    "youtube": "https://www.youtube.com/watch?v=Z0rz3n58Re4"
+  },
+  "images": {
+    "backdrop": "./dist/images/backdrops/green-room.jpg",
+    "cover": "./dist/images/covers/green-room.jpg"
+  }
+}, {
+  "title": "Motel Hell",
+  "details": {
+    "release": "1980-10-24",
+    "language": "English",
+    "description": "Farmer Vincent kidnaps unsuspecting travellers and is burying them in his garden. Unfortunately for his victims, they are not dead. He feeds his victims to prepare them for his roadside stand. His motto is: It takes all kinds of critters...to make Farmer Vincents fritters. The movie is gory, but is also a parody of slasher movies like Last House on the Left."
+  },
+  "links": {
+    "trailer": "k4AR3BgaCdA",
+    "imdb": "tt0081184",
+    "youtube": "https://www.youtube.com/watch?v=KD9Uz30OHxQ",
+    "amazon": "https://www.amazon.com/dp/B001MLEZI4"
+  },
+  "images": {
+    "backdrop": "./dist/images/backdrops/motel-hell.jpg",
+    "cover": "./dist/images/covers/motel-hell.jpg"
+  }
+}, {
+  "title": "Wrong Turn",
+  "details": {
+    "release": "2003-05-30",
+    "language": "English",
+    "description": "Chris crashes into a carload of other young people, and the group of stranded motorists is soon lost in the woods of West Virginia, where they're hunted by three cannibalistic mountain men who are grossly disfigured by generations of inbreeding."
+  },
+  "links": {
+    "trailer": "naUUyD-_oPc",
+    "imdb": "tt0295700",
+    "amazon": "https://www.amazon.com/Wrong-Turn-Desmond-Harrington/dp/B001HM22VK",
+    "netflix": "https://www.netflix.com/title/60027996",
+    "dailymotion": "https://www.dailymotion.com/video/x3ki7rn"
+  },
+  "images": {
+    "backdrop": "./dist/images/backdrops/wrong-turn.jpg",
+    "cover": "./dist/images/covers/wrong-turn.jpg"
+  }
+}, {
+  "title": "Happy Birthday to Me",
+  "details": {
+    "release": "1981-05-15",
+    "language": "English",
+    "description": "A group of eight college friends gather together at an island mansion belonging to heiress Muffy St. John to celebrate their final year of school. They soon discover that each has a hidden secret from their past which is revealed, and soon after, they turn up dead. Yet, are they really dead? Or is it just part of some very real and cruel April Fool's jokes? The hostess, Muffy, is the only one who apparently knows what's going on. But then again, is it really her doing the killing?"
+  },
+  "links": {
+    "trailer": "OEalmOJsvM0",
+    "imdb": "tt0082498",
+    "youtube": "https://www.youtube.com/watch?v=rNwrEBxuRh8",
+    "amazon": "https://www.amazon.com/Happy-Birthday-Me-Glenn-Ford/dp/B001H996H6",
+    "shudder": "https://www.shudder.com/watch/happy-birthday-to-me/2604221/1"
+  },
+  "images": {
+    "backdrop": "./dist/images/backdrops/happy-birthday-to-me.jpg",
+    "cover": "./dist/images/covers/happy-birthday-to-me.jpg"
+  }
+}, {
+  "title": "Sleepaway Camp 2: Unhappy Campers",
+  "details": {
+    "release": "1988-08-26",
+    "language": "English",
+    "description": "Angela Baker has undergone years of therapy, electro-shock and sexual reassignment surgeries, and finally landed herself a job in the last place she should be working - camp rolling hills. She has an old fashioned approach as to how camp should be, and an old familiar deadly way of making sure that those who don't follow her rules don't get to come back next summer."
+  },
+  "links": {
+    "trailer": "CfYRckOJ4oQ",
+    "imdb": "tt0096118",
+    "youtube": "https://www.youtube.com/watch?v=-ZzUCBAFA-g",
+    "amazon": "https://www.amazon.com/Sleepaway-Camp-II-Unhappy-Campers/dp/B003UAQMK4"
+  },
+  "images": {
+    "backdrop": "./dist/images/backdrops/sleepaway-camp2.jpg",
+    "cover": "./dist/images/covers/sleepaway-camp2.jpg"
+  }
+}, {
+  "title": "The Poughkeepsie Tapes",
+  "details": {
+    "release": "2007-04-27",
+    "language": "English",
+    "description": "When hundreds of videotapes showing torture, murder and dismemberment are found in an abandoned house, they reveal a serial killer's decade-long reign of terror and become the most disturbing collection of evidence homicide detectives have ever seen."
+  },
+  "links": {
+    "trailer": "jGA2cIovENM",
+    "imdb": "tt1010271"
+  },
+  "images": {
+    "backdrop": "./dist/images/backdrops/the-poughkeepsie-tapes.jpg",
+    "cover": "./dist/images/covers/the-poughkeepsie-tapes.jpg"
+  }
+}, {
+  "title": "Sinister",
+  "details": {
+    "release": "2012-12-12",
+    "language": "English",
+    "description": "True-crime writer Ellison Oswalt moves himself and his family into a house where a horrific crime took place earlier to begin researching the crime so that he can write a new book to help his flailing career. He uses some 'snuff' film footage he finds in the house to help him in his research, but he soon finds more than he bargained for. There is a figure in each of the films but who or what is it? As a result, he and his family start to suffer and things take a turn for the worse."
+  },
+  "links": {
+    "trailer": "_kbQAJR9YWQ",
+    "imdb": "tt1922777",
+    "amazon": "https://www.amazon.com/Sinister-Ethan-Hawke/dp/B00BHNR1KQ",
+    "netflix": "https://www.netflix.com/title/70221486"
+  },
+  "images": {
+    "backdrop": "./dist/images/backdrops/sinister.jpg",
+    "cover": "./dist/images/covers/sinister.jpg"
+  }
+}, {
+  "title": "Cabin in the Woods",
+  "details": {
+    "release": "2012-04-12",
+    "language": "English",
+    "description": "Five teenagers head off for a weekend at a secluded cabin in the woods. They arrive to find they are quite isolated with no means of communicating with the outside world. When the cellar door flings itself open, they of course go down to investigate. They find an odd assortment of relics and curios, but when one of the women, Dana, reads from a book, she awakens a family of deadly zombie killers. However, there's far more going on than meets the eye."
+  },
+  "links": {
+    "trailer": "NsIilFNNmkY",
+    "imdb": "tt1259521",
+    "amazon": "https://www.amazon.com/Green-Room-Anton-Yelchin/dp/B01HBYKHFA",
+    "netflix": "https://www.netflix.com/title/70112368"
+  },
+  "images": {
+    "backdrop": "./dist/images/backdrops/cabin-in-the-woods.jpg",
+    "cover": "./dist/images/covers/cabin-in-the-woods.jpg"
+  }
+}, {
+  "title": "Deadgirl",
+  "details": {
+    "release": "2008-09-19",
+    "language": "English",
+    "description": "When high school misfits Rickie and JT decide to ditch school and find themselves lost in the crumbling facility of a nearby abandoned hospital, they come face-to-face with a gruesome discovery: a body of a woman stripped naked, chained to a table and covered in plastic and soon realize she is anything but dead. Quickly the boys find themselves embarking on a twisted yet poignant journey testing the limits of their friendship, and forces both to decide just how far they're willing to stretch their understanding of right and wrong."
+  },
+  "links": {
+    "trailer": "zU1oTQGRHCw",
+    "imdb": "tt0896534",
+    "amazon": "https://www.amazon.com/Deadgirl-unrated-Shiloh-Fernandez/dp/B0037AT38K",
+    "shudder": "https://www.shudder.com/watch/dead-girl/2327301/1"
+  },
+  "images": {
+    "backdrop": "./dist/images/backdrops/deadgirl.jpg",
+    "cover": "./dist/images/covers/deadgirl.jpg"
+  }
+}, {
+  "title": "The Loved Ones",
+  "details": {
+    "release": "2010-11-04",
+    "language": "English",
+    "description": "Farmer Vincent kidnaps unsuspecting travellers and is burying them in his garden. Unfortunately for his victims, they are not dead. He feeds his victims to prepare them for his roadside stand. His motto is: It takes all kinds of critters...to make Farmer Vincents fritters. The movie is gory, but is also a parody of slasher movies like Last House on the Left."
+  },
+  "links": {
+    "trailer": "iYUL-iIcrxk",
+    "imdb": "tt1316536",
+    "amazon": "https://www.amazon.com/Loved-Ones-Xavier-Samuel/dp/B0098VXM4S",
+    "netflix": "https://www.netflix.com/title/70123254"
+  },
+  "images": {
+    "backdrop": "./dist/images/backdrops/the-loved-ones.jpg",
+    "cover": "./dist/images/covers/the-loved-ones.jpg"
+  }
+}, {
+  "title": "Blood Rage",
+  "details": {
+    "release": "1987-06-01",
+    "language": "English",
+    "description": "Twins Todd and Terry seem like sweet boys that is, until one of them takes an axe to face of a fellow patron at the local drive-in. Todd is blamed for the bloody crime and institutionalized, whilst twin brother Terry goes free. Ten years later and, as the family gathers around the table for a Thanksgiving meal, the news comes in that Todd has escaped. But has the real killer in fact been in their midst all along? One thing's for sure, there will be blood and rage!"
+  },
+  "links": {
+    "trailer": "ZbOCgeYvP4Y",
+    "imdb": "tt0085253",
+    "amazon": "https://www.amazon.com/Blood-Rage-Louise-Lasser/dp/B01NCBJQAX",
+    "youtube": "https://www.youtube.com/watch?v=T4hV6kiC-qY",
+    "shudder": "https://www.shudder.com/watch/blood-rage/2526518/1"
+  },
+  "images": {
+    "backdrop": "./dist/images/backdrops/blood-rage.jpg",
+    "cover": "./dist/images/covers/blood-rage.jpg"
+  }
+}, {
+  "title": "Scream 2",
+  "details": {
+    "release": "1997-12-12",
+    "language": "English",
+    "description": "Two years after the events of Scream, Sidney Prescott and Randy are attending Windsor college. They are trying to get on with their lives...Until a new Ghostface killing spree begins. With the help of Dewey and Gale, Sidney must find out who's behind the murders. As the body count goes up, the list of suspects goes down."
+  },
+  "links": {
+    "trailer": "t-KSPVGLia4",
+    "imdb": "tt0120082",
+    "amazon": "https://www.amazon.com/dp/B0094N2LQU",
+    "shudder": "https://www.shudder.com/watch/scream-2/2584233"
+  },
+  "images": {
+    "backdrop": "./dist/images/backdrops/scream2.jpg",
+    "cover": "./dist/images/covers/scream2.jpg"
+  }
+}, {
+  "title": "Let Me In",
+  "details": {
+    "release": "2010-10-01",
+    "language": "English",
+    "description": "Owen is 12 years-old, his parents are no longer together and he has no friends. He's also being bullied at school and lives a dreary existence. Late one night he meets Abby, also 12, who has moved in next door. She doesn't say much about herself and doesn't go to school. Meanwhile, a detective is investigating a series of murders where people have been drained of their blood. Owen and Abby are lonely souls who find comfort in one another and Abby gives him the strength to face his tormentors. Abby has secrets as well that touch directly on the police investigation."
+  },
+  "links": {
+    "trailer": "reRRAEVHq8E",
+    "imdb": "tt1228987",
+    "youtube": "https://www.youtube.com/watch?v=hf7XlOMidHo&t=619s",
+    "amazon": "https://www.amazon.com/Let-Me-Kodi-Smit-McPhee/dp/B004LRZ2YC"
+  },
+  "images": {
+    "backdrop": "./dist/images/backdrops/let-me-in.jpg",
+    "cover": "./dist/images/covers/let-me-in.jpg"
+  }
+}, {
+  "title": "You're Next",
+  "details": {
+    "release": "2013-08-23",
+    "language": "English",
+    "description": "When a gang of masked, ax-wielding murderers descend upon the Davison family reunion, the hapless victims seem trapped... until an unlikely guest of the family proves to be the most talented killer of all."
+  },
+  "links": {
+    "trailer": "ufUQWpEkbf0",
+    "imdb": "tt1853739",
+    "youtube": "https://www.youtube.com/watch?v=73X8Uk_zD1g",
+    "amazon": "https://www.amazon.com/Youre-Next-Sharni-Vinson/dp/B00GNL127K"
+  },
+  "images": {
+    "backdrop": "./dist/images/backdrops/youre-next.jpg",
+    "cover": "./dist/images/covers/youre-next.jpg"
+  }
+}, {
+  "title": "The Autopsy of Jane Doe",
+  "details": {
+    "release": "2016-12-21",
+    "language": "English",
+    "description": "Cox and Hirsch play father and son coroners who receive a mysterious homicide victim with no apparent cause of death. As they attempt to identify the beautiful young 'Jane Doe,' they discover increasingly bizarre clues that hold the key to her terrifying secrets."
+  },
+  "links": {
+    "trailer": "mtTAhXuiRTc",
+    "imdb": "tt3289956",
+    "youtube": "https://www.youtube.com/watch?v=nRs7yGhy5-A",
+    "amazon": "https://www.amazon.com/dp/B01N2UV7JL"
+  },
+  "images": {
+    "backdrop": "./dist/images/backdrops/the-autopsy-of-jane-doe.jpg",
+    "cover": "./dist/images/covers/the-autopsy-of-jane-doe.jpg"
+  }
+}, {
+  "title": "A Serbian Film",
+  "details": {
+    "release": "2010-03-15",
+    "language": "Serbian",
+    "description": "An aging porn star agrees to participate in an 'art film' in order to make a clean break from the business, only to discover that he has been drafted into making a pedophilia and necrophilia themed snuff film."
+  },
+  "links": {
+    "trailer": "ddwrbcMmzlc",
+    "imdb": "tt1273235"
+  },
+  "images": {
+    "backdrop": "./dist/images/backdrops/a-serbian-film.jpg",
+    "cover": "./dist/images/covers/a-serbian-film.jpg"
+  }
+}, {
+  "title": "I Saw the Devil",
+  "details": {
+    "release": "2011-01-21",
+    "language": "Korean",
+    "description": "Kyung-chul is a dangerous psychopath who kills for pleasure. He has committed infernal serial murders in diabolic ways that one cannot even imagine and his victims range from young women to even children. One day, Joo-yeon, daughter of a retired police chief becomes his prey and is found dead in a horrific state. Her fiance Soo-hyun promises himself that he will do everything in his power to take bloody vengeance against the killer, even if it means that he must become a monster himself."
+  },
+  "links": {
+    "trailer": "YJLy1c-K7JM",
+    "imdb": "tt1588170",
+    "amazon": "https://www.amazon.com/I-Saw-Devil-Ji-woon-Kim/dp/B00503BENE",
+    "youtube": "https://www.youtube.com/watch?v=dT6ZR653zqg",
+    "shudder": "https://www.shudder.com/watch/i-saw-the-devil/2325140"
+  },
+  "images": {
+    "backdrop": "./dist/images/backdrops/i-saw-the-devil.jpg",
+    "cover": "./dist/images/covers/i-saw-the-devil.jpg"
+  }
+}, {
+  "title": "Silent Night, Deadly Night",
+  "details": {
+    "release": "1984-11-09",
+    "language": "English",
+    "description": "After seeing his parents murdered in front of him a young bit spends most of his life in an orphanage where he is abused by the mother superior when he turns into a teenager he gets a job as a department store santa and when he sees two people having sex in the store he gets flashbacks when his parents and when he can't take it anymore he turns into a santa serial killer."
+  },
+  "links": {
+    "trailer": "EDMTP8GAfV4",
+    "imdb": "tt0088117",
+    "youtube": "https://www.youtube.com/watch?v=BkKLu_X7fKE",
+    "amazon": "https://www.amazon.com/Silent-Night-Deadly-Lilyan-Chauvin/dp/B00ALZZFEK"
+  },
+  "images": {
+    "backdrop": "./dist/images/backdrops/silent-night-deadly-night.jpg",
+    "cover": "./dist/images/covers/silent-night-deadly-night.jpg"
+  }
+}, {
+  "title": "Aliens",
+  "details": {
+    "release": "1986-07-18",
+    "language": "English",
+    "description": "When Ripley's lifepod is found by a salvage crew over 50 years later, she finds that terra-formers are on the very planet they found the alien species. When the company sends a family of colonists out to investigate her story, all contact is lost with the planet and colonists. They enlist Ripley and the colonial marines to return and search for answers."
+  },
+  "links": {
+    "trailer": "XKSQmYUaIyE",
+    "imdb": "tt0090605",
+    "amazon": "https://www.amazon.com/dp/B001609SQA"
+  },
+  "images": {
+    "backdrop": "./dist/images/backdrops/aliens.jpg",
+    "cover": "./dist/images/covers/aliens.jpg"
+  }
+}, {
+  "title": "The Babadook",
+  "details": {
+    "release": "2014-11-28",
+    "language": "English",
+    "description": "A single mother, plagued by the violent death of her husband, battles with her son's fear of a monster lurking in the house, but soon discovers a sinister presence all around her."
+  },
+  "links": {
+    "trailer": "k5WQZzDRVtw",
+    "imdb": "tt2321549",
+    "youtube": "https://www.youtube.com/watch?v=p68LDDRmPq4",
+    "amazon": "https://www.amazon.com/dp/B00P5968FC",
+    "hulu": "https://www.hulu.com/watch/1120519"
+  },
+  "images": {
+    "backdrop": "./dist/images/backdrops/the-babadook.jpg",
+    "cover": "./dist/images/covers/the-babadook.jpg"
+  }
+}, {
+  "title": "Get Out",
+  "details": {
+    "release": "2017-02-24",
+    "language": "English",
+    "description": "It's time for a young African American to meet with his white girlfriend's parents for a weekend in their secluded estate in the woods, but before long, the friendly and polite ambience will give way to a nightmare."
+  },
+  "links": {
+    "trailer": "sRfnevzM9kQ",
+    "imdb": "tt5052448",
+    "amazon": "https://www.amazon.com/dp/B06Y1H48K7"
+  },
+  "images": {
+    "backdrop": "./dist/images/backdrops/get-out.jpg",
+    "cover": "./dist/images/covers/get-out.jpg"
+  }
+}, {
+  "title": "Don't Breathe",
+  "details": {
+    "release": "2016-08-26",
+    "language": "English",
+    "description": "Rocky, a young woman wanting to start a better life for her and her sister, agrees to take part in the robbery of a house owned by a wealthy blind man with her boyfriend Money and their friend Alex. But when the blind man turns out to be a more ruthless adversary than he seems, the group must find a way to escape his home before they become his latest victims."
+  },
+  "links": {
+    "trailer": "76yBTNDB6vU",
+    "imdb": "tt4160708",
+    "amazon": "https://www.amazon.com/Dont-Breathe-Jane-Levy/dp/B01KZSCT14",
+    "youtube": "https://www.youtube.com/watch?v=5KZtwVRXdRg"
+  },
+  "images": {
+    "backdrop": "./dist/images/backdrops/dont-breathe.jpg",
+    "cover": "./dist/images/covers/dont-breathe.jpg"
+  }
+}]
