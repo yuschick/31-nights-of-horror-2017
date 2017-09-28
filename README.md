@@ -2,8 +2,10 @@
 
 It's no secret that I have an incredible love for horror movies. The **31 Nights of Horror** series began in 2015 as a way to work on a fun design and coding project while creating a resource for others who are unsure where to turn for good holiday horror.
 
-### 2017 Summary
+### 2017 Summary - [View Online](http://yuschick.github.io/31-Nights-of-Horror-2017)
 Need horror movie recommendations this October? Check out my third annual 31 Nights of Horror calendar. Enjoy the alliteratively-themed days like Bloodthirsty Thursday and WTF Wednesday, inline movie trailers, and links to streaming services where you can watch now; many for free! I have an incredible love for horror movies and I look forward to building this project every year. **Happy Halloween!**
+
+[![31 Nights of Horror 2017](http://yuschick.github.io/31-Nights-of-Horror-2017/dist/images/screenshot.jpg)](http://yuschick.github.io/31-Nights-of-Horror-2017)
 
 ### All Calendars
 [View the 2015 Calendar](http://yuschick.github.io/31-Nights-of-Horror-2015/) - [Repo](https://github.com/yuschick/31-Nights-of-Horror-2015)  
