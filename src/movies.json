@@ -12,8 +12,8 @@
     "amazon": "https://www.amazon.com/gp/product/B01BT3SCUG"
   },
   "images": {
-    "backdrop": "./dist/images/backdrops/the-witch.jpg",
-    "cover": "./dist/images/covers/the-witch.jpg"
+    "backdrop": "dist/images/backdrops/the-witch.jpg",
+    "cover": "dist/images/covers/the-witch.jpg"
   }
 }, {
   "title": "The Devil's Candy",
@@ -28,8 +28,8 @@
     "amazon": "https://www.amazon.com/Devils-Candy-Ethan-Embry/dp/B06XK24WPZ"
   },
   "images": {
-    "backdrop": "./dist/images/backdrops/the-devils-candy.jpg",
-    "cover": "./dist/images/covers/the-devils-candy.jpg"
+    "backdrop": "dist/images/backdrops/the-devils-candy.jpg",
+    "cover": "dist/images/covers/the-devils-candy.jpg"
   }
 }, {
   "title": "30 Days of Night",
@@ -46,8 +46,8 @@
     "netflix": "https://www.netflix.com/title/70060006"
   },
   "images": {
-    "backdrop": "./dist/images/backdrops/30-days-of-night.jpg",
-    "cover": "./dist/images/covers/30-days-of-night.jpg"
+    "backdrop": "dist/images/backdrops/30-days-of-night.jpg",
+    "cover": "dist/images/covers/30-days-of-night.jpg"
   }
 }, {
   "title": "Stage Fright",
@@ -64,8 +64,8 @@
     "dailymotion": "https://www.dailymotion.com/video/x2inxvh"
   },
   "images": {
-    "backdrop": "./dist/images/backdrops/stage-fright.jpg",
-    "cover": "./dist/images/covers/stage-fright.jpg"
+    "backdrop": "dist/images/backdrops/stage-fright.jpg",
+    "cover": "dist/images/covers/stage-fright.jpg"
   }
 }, {
   "title": "The Midnight Meat Train",
@@ -83,8 +83,8 @@
     "shudder": "https://www.shudder.com/watch/the-midnight-meat-train/2989565/1"
   },
   "images": {
-    "backdrop": "./dist/images/backdrops/the-midnight-meat-train.jpg",
-    "cover": "./dist/images/covers/the-midnight-meat-train.jpg"
+    "backdrop": "dist/images/backdrops/the-midnight-meat-train.jpg",
+    "cover": "dist/images/covers/the-midnight-meat-train.jpg"
   }
 }, {
   "title": "Mother's Day",
@@ -100,8 +100,8 @@
     "amazon": "https://www.amazon.com/Mothers-Day-Rebecca-DeMornay/dp/B008052BRC"
   },
   "images": {
-    "backdrop": "./dist/images/backdrops/mothers-day.jpg",
-    "cover": "./dist/images/covers/mothers-day.jpg"
+    "backdrop": "dist/images/backdrops/mothers-day.jpg",
+    "cover": "dist/images/covers/mothers-day.jpg"
   }
 }, {
   "title": "A Nightmare on Elm Street 3: Dream Warriors",
@@ -116,8 +116,8 @@
     "amazon": "https://www.amazon.com/Nightmare-Elm-Street-Dream-Warriors/dp/B0049Z90EO"
   },
   "images": {
-    "backdrop": "./dist/images/backdrops/dream-warriors.jpg",
-    "cover": "./dist/images/covers/dream-warriors.jpg"
+    "backdrop": "dist/images/backdrops/dream-warriors.jpg",
+    "cover": "dist/images/covers/dream-warriors.jpg"
   }
 }, {
   "title": "Under the Shadow",
@@ -133,8 +133,8 @@
     "netflix": "https://www.netflix.com/title/80096786"
   },
   "images": {
-    "backdrop": "./dist/images/backdrops/under-the-shadow.jpg",
-    "cover": "./dist/images/covers/under-the-shadow.jpg"
+    "backdrop": "dist/images/backdrops/under-the-shadow.jpg",
+    "cover": "dist/images/covers/under-the-shadow.jpg"
   }
 }, {
   "title": "Devil's Pass",
@@ -152,8 +152,8 @@
     "shudder": "https://www.shudder.com/watch/devils-pass/3015683/1"
   },
   "images": {
-    "backdrop": "./dist/images/backdrops/devils-pass.jpg",
-    "cover": "./dist/images/covers/devils-pass.jpg"
+    "backdrop": "dist/images/backdrops/devils-pass.jpg",
+    "cover": "dist/images/covers/devils-pass.jpg"
   }
 }, {
   "title": "Green Room",
@@ -169,8 +169,8 @@
     "youtube": "https://www.youtube.com/watch?v=Z0rz3n58Re4"
   },
   "images": {
-    "backdrop": "./dist/images/backdrops/green-room.jpg",
-    "cover": "./dist/images/covers/green-room.jpg"
+    "backdrop": "dist/images/backdrops/green-room.jpg",
+    "cover": "dist/images/covers/green-room.jpg"
   }
 }, {
   "title": "Motel Hell",
@@ -186,8 +186,8 @@
     "amazon": "https://www.amazon.com/dp/B001MLEZI4"
   },
   "images": {
-    "backdrop": "./dist/images/backdrops/motel-hell.jpg",
-    "cover": "./dist/images/covers/motel-hell.jpg"
+    "backdrop": "dist/images/backdrops/motel-hell.jpg",
+    "cover": "dist/images/covers/motel-hell.jpg"
   }
 }, {
   "title": "Wrong Turn",
@@ -204,8 +204,8 @@
     "dailymotion": "https://www.dailymotion.com/video/x3ki7rn"
   },
   "images": {
-    "backdrop": "./dist/images/backdrops/wrong-turn.jpg",
-    "cover": "./dist/images/covers/wrong-turn.jpg"
+    "backdrop": "dist/images/backdrops/wrong-turn.jpg",
+    "cover": "dist/images/covers/wrong-turn.jpg"
   }
 }, {
   "title": "Happy Birthday to Me",
@@ -222,8 +222,8 @@
     "shudder": "https://www.shudder.com/watch/happy-birthday-to-me/2604221/1"
   },
   "images": {
-    "backdrop": "./dist/images/backdrops/happy-birthday-to-me.jpg",
-    "cover": "./dist/images/covers/happy-birthday-to-me.jpg"
+    "backdrop": "dist/images/backdrops/happy-birthday-to-me.jpg",
+    "cover": "dist/images/covers/happy-birthday-to-me.jpg"
   }
 }, {
   "title": "Sleepaway Camp 2: Unhappy Campers",
@@ -239,8 +239,8 @@
     "amazon": "https://www.amazon.com/Sleepaway-Camp-II-Unhappy-Campers/dp/B003UAQMK4"
   },
   "images": {
-    "backdrop": "./dist/images/backdrops/sleepaway-camp2.jpg",
-    "cover": "./dist/images/covers/sleepaway-camp2.jpg"
+    "backdrop": "dist/images/backdrops/sleepaway-camp2.jpg",
+    "cover": "dist/images/covers/sleepaway-camp2.jpg"
   }
 }, {
   "title": "The Poughkeepsie Tapes",
@@ -254,8 +254,8 @@
     "imdb": "tt1010271"
   },
   "images": {
-    "backdrop": "./dist/images/backdrops/the-poughkeepsie-tapes.jpg",
-    "cover": "./dist/images/covers/the-poughkeepsie-tapes.jpg"
+    "backdrop": "dist/images/backdrops/the-poughkeepsie-tapes.jpg",
+    "cover": "dist/images/covers/the-poughkeepsie-tapes.jpg"
   }
 }, {
   "title": "Sinister",
@@ -271,8 +271,8 @@
     "netflix": "https://www.netflix.com/title/70221486"
   },
   "images": {
-    "backdrop": "./dist/images/backdrops/sinister.jpg",
-    "cover": "./dist/images/covers/sinister.jpg"
+    "backdrop": "dist/images/backdrops/sinister.jpg",
+    "cover": "dist/images/covers/sinister.jpg"
   }
 }, {
   "title": "Cabin in the Woods",
@@ -288,8 +288,8 @@
     "netflix": "https://www.netflix.com/title/70112368"
   },
   "images": {
-    "backdrop": "./dist/images/backdrops/cabin-in-the-woods.jpg",
-    "cover": "./dist/images/covers/cabin-in-the-woods.jpg"
+    "backdrop": "dist/images/backdrops/cabin-in-the-woods.jpg",
+    "cover": "dist/images/covers/cabin-in-the-woods.jpg"
   }
 }, {
   "title": "Deadgirl",
@@ -305,8 +305,8 @@
     "shudder": "https://www.shudder.com/watch/dead-girl/2327301/1"
   },
   "images": {
-    "backdrop": "./dist/images/backdrops/deadgirl.jpg",
-    "cover": "./dist/images/covers/deadgirl.jpg"
+    "backdrop": "dist/images/backdrops/deadgirl.jpg",
+    "cover": "dist/images/covers/deadgirl.jpg"
   }
 }, {
   "title": "The Loved Ones",
@@ -322,8 +322,8 @@
     "netflix": "https://www.netflix.com/title/70123254"
   },
   "images": {
-    "backdrop": "./dist/images/backdrops/the-loved-ones.jpg",
-    "cover": "./dist/images/covers/the-loved-ones.jpg"
+    "backdrop": "dist/images/backdrops/the-loved-ones.jpg",
+    "cover": "dist/images/covers/the-loved-ones.jpg"
   }
 }, {
   "title": "Blood Rage",
@@ -340,8 +340,8 @@
     "shudder": "https://www.shudder.com/watch/blood-rage/2526518/1"
   },
   "images": {
-    "backdrop": "./dist/images/backdrops/blood-rage.jpg",
-    "cover": "./dist/images/covers/blood-rage.jpg"
+    "backdrop": "dist/images/backdrops/blood-rage.jpg",
+    "cover": "dist/images/covers/blood-rage.jpg"
   }
 }, {
   "title": "Scream 2",
@@ -357,8 +357,8 @@
     "shudder": "https://www.shudder.com/watch/scream-2/2584233"
   },
   "images": {
-    "backdrop": "./dist/images/backdrops/scream2.jpg",
-    "cover": "./dist/images/covers/scream2.jpg"
+    "backdrop": "dist/images/backdrops/scream2.jpg",
+    "cover": "dist/images/covers/scream2.jpg"
   }
 }, {
   "title": "Let Me In",
@@ -374,8 +374,8 @@
     "amazon": "https://www.amazon.com/Let-Me-Kodi-Smit-McPhee/dp/B004LRZ2YC"
   },
   "images": {
-    "backdrop": "./dist/images/backdrops/let-me-in.jpg",
-    "cover": "./dist/images/covers/let-me-in.jpg"
+    "backdrop": "dist/images/backdrops/let-me-in.jpg",
+    "cover": "dist/images/covers/let-me-in.jpg"
   }
 }, {
   "title": "You're Next",
@@ -391,8 +391,8 @@
     "amazon": "https://www.amazon.com/Youre-Next-Sharni-Vinson/dp/B00GNL127K"
   },
   "images": {
-    "backdrop": "./dist/images/backdrops/youre-next.jpg",
-    "cover": "./dist/images/covers/youre-next.jpg"
+    "backdrop": "dist/images/backdrops/youre-next.jpg",
+    "cover": "dist/images/covers/youre-next.jpg"
   }
 }, {
   "title": "The Autopsy of Jane Doe",
@@ -408,8 +408,8 @@
     "amazon": "https://www.amazon.com/dp/B01N2UV7JL"
   },
   "images": {
-    "backdrop": "./dist/images/backdrops/the-autopsy-of-jane-doe.jpg",
-    "cover": "./dist/images/covers/the-autopsy-of-jane-doe.jpg"
+    "backdrop": "dist/images/backdrops/the-autopsy-of-jane-doe.jpg",
+    "cover": "dist/images/covers/the-autopsy-of-jane-doe.jpg"
   }
 }, {
   "title": "A Serbian Film",
@@ -423,8 +423,8 @@
     "imdb": "tt1273235"
   },
   "images": {
-    "backdrop": "./dist/images/backdrops/a-serbian-film.jpg",
-    "cover": "./dist/images/covers/a-serbian-film.jpg"
+    "backdrop": "dist/images/backdrops/a-serbian-film.jpg",
+    "cover": "dist/images/covers/a-serbian-film.jpg"
   }
 }, {
   "title": "I Saw the Devil",
@@ -441,8 +441,8 @@
     "shudder": "https://www.shudder.com/watch/i-saw-the-devil/2325140"
   },
   "images": {
-    "backdrop": "./dist/images/backdrops/i-saw-the-devil.jpg",
-    "cover": "./dist/images/covers/i-saw-the-devil.jpg"
+    "backdrop": "dist/images/backdrops/i-saw-the-devil.jpg",
+    "cover": "dist/images/covers/i-saw-the-devil.jpg"
   }
 }, {
   "title": "Silent Night, Deadly Night",
@@ -458,8 +458,8 @@
     "amazon": "https://www.amazon.com/Silent-Night-Deadly-Lilyan-Chauvin/dp/B00ALZZFEK"
   },
   "images": {
-    "backdrop": "./dist/images/backdrops/silent-night-deadly-night.jpg",
-    "cover": "./dist/images/covers/silent-night-deadly-night.jpg"
+    "backdrop": "dist/images/backdrops/silent-night-deadly-night.jpg",
+    "cover": "dist/images/covers/silent-night-deadly-night.jpg"
   }
 }, {
   "title": "Aliens",
@@ -474,8 +474,8 @@
     "amazon": "https://www.amazon.com/dp/B001609SQA"
   },
   "images": {
-    "backdrop": "./dist/images/backdrops/aliens.jpg",
-    "cover": "./dist/images/covers/aliens.jpg"
+    "backdrop": "dist/images/backdrops/aliens.jpg",
+    "cover": "dist/images/covers/aliens.jpg"
   }
 }, {
   "title": "The Babadook",
@@ -492,8 +492,8 @@
     "hulu": "https://www.hulu.com/watch/1120519"
   },
   "images": {
-    "backdrop": "./dist/images/backdrops/the-babadook.jpg",
-    "cover": "./dist/images/covers/the-babadook.jpg"
+    "backdrop": "dist/images/backdrops/the-babadook.jpg",
+    "cover": "dist/images/covers/the-babadook.jpg"
   }
 }, {
   "title": "Get Out",
@@ -508,8 +508,8 @@
     "amazon": "https://www.amazon.com/dp/B06Y1H48K7"
   },
   "images": {
-    "backdrop": "./dist/images/backdrops/get-out.jpg",
-    "cover": "./dist/images/covers/get-out.jpg"
+    "backdrop": "dist/images/backdrops/get-out.jpg",
+    "cover": "dist/images/covers/get-out.jpg"
   }
 }, {
   "title": "Don't Breathe",
@@ -525,7 +525,7 @@
     "youtube": "https://www.youtube.com/watch?v=5KZtwVRXdRg"
   },
   "images": {
-    "backdrop": "./dist/images/backdrops/dont-breathe.jpg",
-    "cover": "./dist/images/covers/dont-breathe.jpg"
+    "backdrop": "dist/images/backdrops/dont-breathe.jpg",
+    "cover": "dist/images/covers/dont-breathe.jpg"
   }
 }]
