@@ -1,0 +1,16 @@
+.arrow {
+  cursor: pointer;
+  height: 12px;
+  fill: #fff;
+  opacity: 0.5;
+  transition: opacity 0.25s ease;
+  width: 12px;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.is-flipped {
+  transform: rotate(180deg);
+}

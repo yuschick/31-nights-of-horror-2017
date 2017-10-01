@@ -1,0 +1,125 @@
+@import './date-display-containers';
+@import './arrows';
+@import './primary-container';
+@import './movie-card';
+@import './trailer';
+
+.day-outer-container {
+  background-image: url('../images/icon-loading.svg');
+  background-position: center;
+  background-size: 250px 350px;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin-top: -55px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+
+  &:nth-child(odd) {
+    clip-path: polygon(0 0, 100% 75px, 100% calc(100% - 75px), 0 100%);
+    padding-top: 100px;
+  }
+
+  &:nth-child(even) {
+    clip-path: polygon(0 75px, 100% 0, 100% 100%, 0 calc(100% - 75px));
+    padding-top: 75px;
+  }
+
+  &:first-child {
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 75px), 0 100%);
+    margin-top: 0;
+  }
+
+  &:last-child {
+    clip-path: polygon(0 0, 100% 75px, 100% 100%, 0 100%);
+  }
+
+  &.loaded {
+    .primary-movie-container {
+      opacity: 1;
+    }
+  }
+
+  &.trailer {
+    .day-inner-container {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .date-display-outer-container,
+    .movie-card-content-container,
+    .movie-details-container,
+    h2 {
+      transform: translateX(50vw);
+    }
+
+    .play-icon-container {
+      opacity: 0;
+      transform: translateX(-50vw);
+    }
+  }
+}
+
+.day-inner-container {
+  display: flex;
+  height: 100%;
+  position: relative;
+  transition: opacity 1s ease;
+  width: 100%;
+  z-index: 2;
+}
+
+.icons-container {
+  display: flex;
+  padding-top: 1rem;
+}
+
+.stream-icon {
+  height: 34px;
+  filter: grayscale(100%);
+  margin-right: $hspace;
+  transition: filter 0.15s ease;
+  width: 34px;
+
+  &:hover {
+    filter: none;
+  }
+
+  a,
+  img {
+    display: block;
+  }
+}
+@media screen and (max-width: 500px) {
+  .day-outer-container {
+    &:first-child,
+    &:last-child,
+    &:nth-child(even),
+    &:nth-child(odd) {
+      clip-path: none;
+      height: auto;
+      margin-top: 0;
+      min-height: 100vh;
+      padding: 100px 0;
+    }
+  }
+}
+@media screen and (max-width: 750px) {
+  .stream-icon {
+    filter: none;
+  }
+}
+@supports not (clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100% )) {
+  .day-outer-container {
+    &:first-child,
+    &:last-child,
+    &:nth-child(even),
+    &:nth-child(odd) {
+      border-bottom: 18px solid #000!important;
+      clip-path: none!important;
+      margin-top: 0 !important;
+      min-height: 100vh!important;
+      padding: 100px 0 !important;
+    }
+  }
+}
